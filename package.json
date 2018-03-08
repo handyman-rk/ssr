@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Server-side Rendering React from Scratch!",
   "main": "index.js",
+  "engines": {
+    "node": "8.10.0"
+  },
   "scripts": {
     "start": "node index.js",
     "sass": "node-sass assets/sass/style.scss assets/style.css",
