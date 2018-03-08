@@ -1,0 +1,527 @@
+[
+{ "id": "scc",
+"title":"Collaboration and Communication Tools",
+"intro": "<p>Welcome to the very first collaboration and communication software section of DevOps tools.</p><p>Before moving forward I would like to thank <a href=\"https://www.atlassian.com/\">Atlassian</a> for delivering 4 awesome collaboration tools for teams.</p> <p>Every team either small or large has a goal to achieve. To accomplish it in less time without confusion and frustration you need to have a plan, a roadmap and unity.</p><p>Specially DevOps teams have a lot to do. Which makes it important to have shared responsibilities, transparency, ability to provide and react to feedbacks faster. So that you can release with confidence and sanity knowing the information you have is always current.</p><p>To establish a fluent communication channel and a collaborative environment pick some tools from the list below.</p>",
+"apps": [
+
+       { "name": "Slack",
+         "license": ["Free", "Paid"],
+         "img":{
+           "src": "media/slack-app-icon.png",
+           "alt": "slack app icon"
+         },
+         "desc": "<p>Slack is the most popular and easy to use team communication app. The hosted platform used by Millions for transparent communication across workplace, remote offices and remote teams. </p> <p>Slack uses channels to organize projects, topics, teams or anything of your choice. You can also create private channels. Supports almost every way you may use including text, emoji, attachment, video and audio calls and much more. </p>    <p>Slack supports <a href=https://get.slack.help/hc/en-us/articles/204368833c target=_blank>Nonprofits</a> and <a href=https://get.slack.help/hc/en-us/articles/206646877 target=_blank>Education</a> with special discount offers. </p>",
+         "link": "https://slack.com/",
+         "tweet":"Slack (@SlackHQ) - The app for easy and transparent communication for teams"
+       },
+
+       { "name":"HipChat",
+         "publisher": "Atlassian",
+         "license": ["Free", "Paid"],
+         "img":{
+           "src": "media/hipchat-icon.png",
+           "alt": "hipchat icon"
+         },
+         "desc": "<p>If your team loves chatting, you will love it. HipChat is a team communication software based on ChatOps concept built for businesses.</p> <p>Share ideas, files and discuss projects in group chat, video chat or by screen sharing. No matter where you are or what device you have, be always a part of your team's success..</p> <p>HipChat is simple to use as WhatsApp and Skype with great productivity results. Integrates with most tools that you may be using. </p><p>If you are worried about security or data lockup, you can host HipChat on your own private server. </p>",
+         "link": "https://www.hipchat.com/",
+         "tweet":"@HipChat is a team communication software built for businesses "
+       },
+
+       { "name": "Mattermost",
+         "license": ["Open Source","Free", "Paid"],
+         "img":{
+           "src": "media/mattermost-icon.png",
+           "alt": "mattermost icon"
+         },
+         "desc": "<p>Mattermost is an Open Source, private cloud Slack alternative. It is a tool for ChatOps with best features from Slack and HipChat in a single application.</p> <p>Just download and deploy to your own servers. Advanced enterprise features unlock with trial or subscription license key. </p>",
+         "link": "https://mattermost.com/",
+         "tweet":"Mattermost (@mattermosthq) is an Open Source Slack alternative tool for ChatOps"
+       },
+
+       { "name": "Zulip",
+         "license": ["Open Source","Free"],
+         "img":{
+           "src": "media/zulip-icon.png",
+           "alt": "zulip icon"
+         },
+         "desc": "<p>Another Open Source group chat software. Acquired and then released as open source by DropBox.</p> <p>Zulip makes conversations more relevant with an email threading model. It supports markdown, emoji, image, video, tweet reviews,  attachments, code and links.</p> <p>It also provides keyboard shortcuts and syntax highlighting.</p>",
+         "link": "https://zulipchat.com/",
+         "tweet":"@zulip - An Open Source group chat software by DropBox"
+       },
+
+       { "name": "JIRA Software",
+         "publisher": "Atlassian",
+         "license": ["Paid"],
+         "img":{
+           "src": "media/jirasoftware-icon.png",
+           "alt": "jirasoftware icon"
+         },
+         "desc": "<p>A tool for the issue and project tracking for teams. JIRA Software is the only tool you need to Plan, track and release great applications faster and reliably.</p> <p>It comes with a default workflow that you can follow or customize to fit your team style. JIRA has over 1,000 add-ons so that you can achieve your goals painlessly.</p>",
+         "link": "https://www.atlassian.com/software/jira",
+         "tweet":"@JIRA Software is the only tool you need to Plan, track and release great applications"
+       },
+
+       { "name": "Trello",
+         "publisher": "Atlassian",
+         "license": ["Free", "Paid"],
+         "img":{
+           "src": "media/trello-icon.png",
+           "alt": "trello icon"
+         },
+         "desc": "<p>Trello is a team collaboration tool. While working on a project your team needs to have the track of activities, priorities and a lot more.</p> <p>That&#39;s what Trello does, it provides you a blank board to organize and prioritize tasks in a flexible way with easy to use drag and drop interface makes managing work a fun. </p> <p>Don&#39;t just name cards, add description, attachments, labels, checklist, comments, and more to better track progress..</p>",
+         "link": "https://trello.com/",
+         "tweet":"@trello is a team collaboration tool to organize and prioritize tasks in a flexible way"
+       },
+
+       { "name":"Asana",
+         "license": ["Free", "Paid"],
+         "img":{
+           "src": "media/asana-icon.png",
+           "alt": "asana icon"
+         },
+         "desc": "<p>A dashboard to track tasks, project progress and communicate with team members. Asana is a bit smart in terms of progress tracking. It adds a progress card to tasks so that you can monitor their progress anytime.</p> <p>You can have smart conversation with control on messages. and a lot more. There is a lot more to explore. Their feature and integration list is too long.</p>",
+         "link": "https://asana.com/",
+         "tweet":"@asana - A dashboard to track your project and communicate with team members"
+       },
+
+       { "name":"Confluence",
+         "publisher": "Atlassian",
+         "license": ["Free", "Paid"],
+         "img":{
+           "src": "media/confluence-icon.png",
+           "alt": "confluence icon"
+         },
+         "desc": "<p>Confluence is a project and documentation collaboration software. A popular name in DevOps and Open Source community. A distraction free interface to create, share and collaborate on projects in one place.</p> <p>Describe goals, create a roadmap to follow and track updates.</p> <p>Documentation section enables you to create, publish, organize and access the knowledge base. The knowledge base can help you better respond to customer queries.</p>",
+         "link": "https://www.atlassian.com/software/confluence",
+         "tweet":"@Confluence is a project and documentation collaboration software"
+       },
+
+       { "name": "Cucumber",
+         "license": ["Open Source","Free"],
+         "img":{
+           "src": "media/cucumber-icon.png",
+           "alt": "cucumber icon"
+         },
+         "desc": "<p>Cucumber is a simple human collaboration tool for DevOps. It is a tool for running automated tests, documentation and executable specifications.</p> <p>Cucumber makes software development lifecycle more focused by combining requirements, automated tests and documentation into one plain text executable specifications that validate the software.</p>",
+         "link": "https://cucumber.io/",
+         "tweet":"@cucumberbdd is a simple human collaboration tool for running automated tests, docs and more"
+       }
+   ]
+
+
+},
+
+{
+"id": "sco",
+"title": "Development Tools",
+"intro": "It's hard to suggest coding tools for DevOps. They program in several languages in different environments. So I have added some common and popular tools.",
+"apps": [
+ { "name": "Git",
+   "license": ["Open Source","Free"],
+   "img":{
+     "src": "media/git-icon.png",
+     "alt": "git icon"
+   },
+   "desc": "<p>Git is a must have free and open source distributed version control system. Git can be used everywhere from small to very large projects, not neccessarly development works.</p> <p>It is fast, efficient and works on all platforms. Also it's easy to learn and use.</p>",
+   "link": "https://git-scm.com/",
+   "tweet":"Git is a must have free and open source tool for version control"
+ }
+]
+},
+
+{
+"id": "sci",
+"title": "Continuous Integration Tools",
+"intro": "It's hard to suggest coding tools for DevOps. They program in several languages in different environments. So I have added some common and popular tools.",
+"apps": [
+ { "name": "Jenkins",
+   "license": ["Open Source","Free"],
+   "img":{
+     "src": "media/jenkins-icon.png",
+     "alt": "Jenkins icon"
+   },
+   "desc": "<p>A well known name in DevOps community and the leading open source automation server. There are lots of plugins available to reduce your manual work. Jenkins can be configured to build code, automatically run tests, and push to staging or production.</p><p> It can also create Docker containers to run your application.</p>",
+   "link": "https://jenkins.io/index.html",
+   "tweet":"Jenkins (@jenkinsci) - An Open Source Automation Server to automate any project"
+ },
+ { "name": "Travis CI",
+   "license": ["Free", "Paid"],
+   "img":{
+     "src": "media/travis-ci-icon.png",
+     "alt": "Travis CI icon"
+   },
+   "desc": "<p>Travis is continuous integration and delivery service for projects on GitHub. It is free for Open Source projects and paid for private repositories.</p> <p>A great tool for automatic project sync and running testing on it. If test is ok Deploy in minutes!</p> ",
+   "link": "https://travis-ci.org/",
+   "tweet":"@travisci is a continuous integration and delivery service for GitHub projects"
+ },
+ { "name": "Circle CI",
+   "license": ["Free", "Paid"],
+   "img":{
+     "src": "media/circle-ci-icon.png",
+     "alt": "Circle CI icon"
+   },
+   "desc": "<p>Another continuous integration and delivery platform. Helps software teams release faster and reliable code with confidence by automating the build, test, and deploy process. </p> <p>The first linux container is free with some limits. Else it's a paid tool.</p>",
+   "link": "https://circleci.com/",
+   "tweet":"@circleci- continuous integration and delivery platform to automate any project"
+ },
+ { "name": "Bitbucket Pipelines",
+   "publisher": "Atlassian",
+   "license": ["Free", "Paid"],
+   "img":{
+     "src": "media/bitbucket-icon.png",
+     "alt": "Bitbucket icon"
+   },
+   "desc": "<p>Bitbucket Pipeline is an easy approach to Build, test and deploy your code from Bitbucket.</p>",
+   "link": "https://bitbucket.org/",
+   "tweet":"@Bitbucket Pipeline is an easy approach to Build, test and deploy from Bitbucket"
+ },
+ { "name": "AppVeyor",
+   "license": ["Free", "Paid"],
+   "img":{
+     "src": "media/appveyor-icon.png",
+     "alt": "AppVeyor icon"
+   },
+   "desc": "<p>This one is different from others. AppVeyor is the Continuous Delivery service for Windows developers. So if your app is a Windows/.NET based you should try it.</p> <p>It is free for Open Source and gives 50% off for students.</p>",
+   "link": "https://www.appveyor.com/",
+   "tweet":"AppVeyor is the Continuous Delivery service for Windows developers"
+ }
+]
+},
+
+{
+"id": "scm",
+"title": "Configuration Management Tools",
+"intro": "Tntro - still to be written",
+"apps": [
+ { "name": "Consul",
+   "license": ["Open Source","Free"],
+   "publisher": "HashiCorp",
+   "img":{
+     "src": "media/consul-icon.png",
+     "alt": "Consul icon"
+   },
+   "desc": "<p>Consul is a great tool for service discovery and configuration management. Best suited for modern elastic applications built upon microservices architecture. </p> <p> It provides several key features:  Service Discovery, Health Checking and supports Multiple Datacenters. </p><p>For ease of access, Consul can unite multiple machines as a single entity. The tool is efficient and friendly to both the DevOps community and application developers. </p>",
+   "link": "https://www.consul.io/",
+   "tweet":"Share your thoughts on Consul"
+ },
+ { "name": "Ansible",
+   "license": ["Open Source","Free"],
+   "publisher": "Red Hat",
+   "img":{
+     "src": "media/ansible-icon.png",
+     "alt": "Ansible icon"
+   },
+   "desc": "<p>Ansible is a simple IT automation tool for DevOps similar to puppet and chef. Aims to eliminate repetitive work tasks such as deploying solutions, managing systems, orchestration and more. </p> <p> Ansible is actively supported by open source community with more than 2,400+ contributors simplifying your hurdles with 950+ modules.  </p>",
+   "link": "http://www.ansible.com/",
+   "tweet":"@ansible is a simple IT automation tool for DevOps following DRY concept"
+ },
+ { "name": "Chef",
+   "license": ["Open Source","Free", "Paid"],
+   "img":{
+     "src": "media/chef-icon.jpg",
+     "alt": "Chef icon"
+   },
+   "desc": "<p>Chef is a well-known system and cloud infrastructure automation tool. Manage everything with code which is super easy to code, version, test, update and share. </p> <p>No matter on which platform you are it supports cloud, private and hybrid environment.  </p><p>My time with it was great. It was able to get my hands dirty on it within the first day.</p>",
+   "link": "https://www.chef.io/chef/",
+   "tweet":"@chef is a infrastructure automation tool to deliver more every minute"
+ },
+ { "name": "Puppet",
+   "license": ["Open Source"],
+   "img":{
+     "src": "media/puppet-icon.jpg",
+     "alt": "Puppet icon"
+   },
+   "desc": "<p>Puppet is one of the DevOps founding members. Puppet is a configuration management and automation tool. They actually aim to power everything around us with software. </p> <p>It helps you with containers, infrastructure as code, cloud and DevOps practices. </p>",
+   "link": "https://puppet.com/",
+   "tweet":"@puppetize is a infrastructure automation tool to deliver more every minute"
+ }
+]
+},
+
+{
+"id": "svc",
+"title": "Virtualization and Container Tools",
+"intro": "<p>Server virtualization is the most common practice to utilize resources at their maximum capacity.</p><p> It gives freedom to run multiple environments simultaneously on a single server. This is how clouds work.</p> ",
+"apps": [
+ { "name": "Docker",
+   "license": ["Open Source","Free", "Paid"],
+   "img":{
+     "src": "media/docker-icon.jpg",
+     "alt": "Docker icon"
+   },
+   "desc": "<p>Docker, it's impossible a DevOps engineer is not familiar with it. Every application nowadays runs in containers powered by docker. You can launch a virtual container from an already written docker file or create your own images.</p><p>Docker is infrastructure independent platform which means your app will run everywhere. This also makes moving containers possible and prevents vendor lock in. </p><p>It eases configuration management, controlling issues, and scaling. </p>",
+   "link": "https://www.docker.com/",
+   "tweet":"@Docker is the modern way to create and manage containers for your application"
+ },
+ { "name": "Kubernetes",
+   "license": ["Open Source","Free"],
+   "img":{
+     "src": "media/kubernetes-icon.png",
+     "alt": "Kubernetes icon"
+   },
+   "desc": "<p>Kubernetes is an open-source tool for automating deployment, scaling and managing Docker containers. Best known for production-grade container orchestration management. </p><p>It groups all the containers that belong to the same application into a single logical unit. Which is easy to manage. </p><p>Kubernetes is similar to Docker in terms of flexibility. Run it anywhere and it scales with your need. </p>",
+   "link": "https://kubernetes.io/",
+   "tweet":"Kubernetes (@kubernetesio) is the best way to organize and manage containers on any scale"
+ },
+ { "name": "Apache Mesos",
+   "license": ["Open Source","Free"],
+   "img":{
+     "src": "media/apache-mesos.png",
+     "alt": "Apache Mesos icon"
+   },
+   "desc": "<p>Apache Mesos gives you the freedom to consume your datacenter as a single pool of resources. </p><p>Mesos is a distributed systems kernel that abstracts CPU, memory, storage, and other compute resources away from machines (physical or virtual). </p><p>You can use it to create a fault-tolerant and elastic distributed system. </p>",
+   "link": "http://mesos.apache.org/",
+   "tweet":"@ApacheMesos enables you to consume your datacenter as a single pool of resources"
+ },
+ { "name": "Mesosphere",
+   "license": ["Free","Paid"],
+   "img":{
+     "src": "media/mesosphere-icon.jpg",
+     "alt": "Mesosphere icon"
+   },
+   "desc": "<p>Mesosphere is Apache Mesos powered platform for building data-rich apps. It inherits all the features of Mesos so that you focus on building your app, not infrastructure. </p><p>Mesosphere utilizes containers which run on any infrastructure. Build once, run everywhere with no fear of vendor lock-in. </p>",
+   "link": "https://mesosphere.com/",
+   "tweet":"@mesosphere is a platform built on @ApacheMesos for running data-rich apps"
+ },
+ { "name": "Vagrant",
+   "license": ["Free"],
+   "publisher": "HashiCorp",
+   "img":{
+     "src": "media/vagrant-icon.png",
+     "alt": "Vagrant icon"
+   },
+   "desc": "<p>Vagrant is a lightweight tool to automate development environments, in reproducible ways. Create a configuration file describing what to be in that environment once. After that roll as many copies as you want. </p><p>It is important to note that it's losing its popularity among DevOps since Docker has surfaced the market. So if you are just starting, skip it.  </p>",
+   "link": "https://www.vagrantup.com/",
+   "tweet":"@vagrantup is a tool to automate virtual development machines"
+ },
+ { "name": "vSphere",
+   "license": ["Paid"],
+   "publisher": "VMware",
+   "img":{
+     "src": "media/vsphere-icon.png",
+     "alt": "vSphere icon"
+   },
+   "desc": "<p> vShere is a server virtualization software. Also, comes with Operations Management which reports various activities and availability. </p><p>Helps you get the best performance, availability, and efficiency from your infrastructure and applications. </p>",
+   "link": "https://www.vmware.com/products/vsphere.html",
+   "tweet":"Say in your own words"
+ }
+]
+},
+
+{
+"id": "ssc",
+"title": "Security Tools",
+"intro": "It's hard to suggest coding tools for DevOps. They program in several languages in different environments. So I have added some common and popular tools.",
+"apps": [
+ { "name": "Nagios",
+   "license": ["Open Source","Free", "Paid"],
+   "img":{
+     "src": "media/nagios-icon.png",
+     "alt": "nagios icon"
+   },
+   "desc": "<p>The Standard and best Open Source tool for monitoring your infrastructure. Nagios is trusted by over 9000+ DevOps teams. This stat includes teams from big brands such as Airbnb, CISCO, PayPal and more.</p> <p>A flexible solution for monitoring network, server, and applications. At a minimum install core and extend it with plugins from the community.</p>",
+   "link": "https://www.nagios.org/",
+   "tweet":"Nagios (@nagiosinc) - The Standard Open Source tool for monitoring your infrastructure"
+ }
+]
+},
+
+{ "id":"sml",
+"title":"Monitoring & Logging Tools",
+"intro": "<p>Either your are developing your application or it's already in production, to ensure it's continuity you have to continuously monitor it. </p> <p>The reason,</p> <p>DevOps teams should be aware of failures before your users do. </p> <p>To achieve it, these teams monitor metrics and logs from infrastructure and the service or software as a whole.</p> <p>But this is not easy, there is a huge amount of information collected from various sources. One can never consume it without categorizing, visualizing and normalizing this data.</p> <p>I got a bit confused while preparing this list. There are more and more tools for the same. Even they cover half my total tools list.</p>",
+"apps": [
+{ "name": "New Relic",
+  "license": ["Paid"],
+  "img":{
+    "src": "media/new-relic-icon.png",
+    "alt": "New Relic icon"
+  },
+  "desc": "<p>The top Performance monitoring and management tool. Supports most languages and platfroms. Has products for monitoring anything.</p>",
+  "link": "https://newrelic.com/",
+  "tweet":"@newrelic - The top Performance monitoring and management tool"
+},
+
+{ "name": "AppDynamics",
+  "license": ["Open Source","Free", "Paid"],
+  "img":{
+    "src": "media/appdynamics-icon.png",
+    "alt": "AppDynamics icon"
+  },
+  "desc": "<p>Application Perfromance monitoring and Management tool. Provides real-time data from code to user experience. </p> <p>With real-time Mobile and Browser user monitoring it makes customer behavior analysis easy.</p>",
+  "link": "https://www.appdynamics.com/",
+  "tweet":"@AppDynamics - Real time application perfromance monitoring and management tool"
+},
+
+{ "name": "Nagios",
+  "license": ["Open Source","Free", "Paid"],
+  "img":{
+    "src": "media/nagios-icon.png",
+    "alt": "nagios icon"
+  },
+  "desc": "<p>The Standard and best Open Source tool for monitoring your infrastructure. Nagios is trusted by over 9000+ DevOps teams. This stat includes teams from big brands such as Airbnb, CISCO, PayPal and more.</p> <p>A flexible solution for monitoring network, server, and applications. At a minimum install core and extend it with plugins from the community.</p>",
+  "link": "https://www.nagios.org/",
+  "tweet":"Nagios (@nagiosinc) - The Standard Open Source tool for monitoring your infrastructure"
+},
+
+{ "name": "Icinga",
+  "license": ["Open Source","Free"],
+  "img":{
+    "src": "media/icinga-icon.png",
+    "alt": "icinga icon"
+  },
+  "desc": "<p>It is a fork of Nagios (above). The creators of Icinga aim to extend Nagios with new features and a modern user experience. I personally don't understand this reason.</p> <p>Icinga follows Monitoring as a Code approach. Which means you can configure and provision your monitoring code through REST API. It is extensible and integrated with many popular DevOps tools.</p>",
+  "link": "https://www.icinga.org/",
+  "tweet":"@icinga aim to extend Nagios with new features and a modern user experience"
+},
+
+{ "name": "ELK Stack",
+  "publisher": "Logz.io",
+  "license": ["Free", "Paid"],
+  "img":{
+    "src": "media/elk-stack-icon.png",
+    "alt": "ELK Stack icon"
+  },
+  "desc": "<p>ELK is short for Elastic, Logstash and kibana. Logz.io provides ELK Stack as services to help you analyze logs. It is a most common tool.</p> <p>ELK Stack collect everything that you would like to analyze. Starting from application to system and network logs.</p> <p>A few days back I came across a post on Moz engineering blog. You should also read how they implemented <a href=https://moz.com/devblog/log-aggregation-with-elk-kafka/ target=_blank>ELK Stack with Kafka</a>. Their success and stats are impressive.</p>",
+  "link": "http://logz.io/",
+  "tweet":"ELK - short for Elastic, Logstash and kibana. @logzio provides ELK Stack as services"
+},
+
+{ "name": "Collectd",
+  "license": ["Open Source","Free"],
+  "img":{
+    "src": "media/collectl-icon.png",
+    "alt": "Collectd icon"
+  },
+  "desc": "<p>Collectd is a tiny tool to gather and store statistics about the system. It is simple and flexible to use. It can monitor different parameter in parallel.</p>",
+  "link": "http://collectd.org/",
+  "tweet":"@collectd is a tiny tool to gather and store statistics about the system"
+},
+
+{ "name": "Zabbix",
+  "license": ["Open Source","Free"],
+  "img":{
+    "src": "media/zabbix-icon.png",
+    "alt": "Zabbix icon"
+  },
+  "desc": "<p>An Open Source software to monitor millions of metrics in real-time. No matter how many servers, virtual machines, containers, network devices you have.</p> <p>The complete monitoring solution for your network.</p>",
+  "link": "https://www.zabbix.com/",
+  "tweet":"@zabbix - An Open Source software to monitor millions of metrics in real-time"
+},
+
+{ "name": "Observium",
+  "license": ["Free", "Paid"],
+  "img":{
+    "src": "media/observium-icon.png",
+    "alt": "observium icon"
+  },
+  "desc": "<p>Another network monitoring tool for DevOps. Observium is a simple and easy to use tool to track health and status of your network. It also has auto-discovery feature to ease your work.</p> <p>It visualizes your network infrastructure by automatically collecting information about services and protocols. Observium supports a wide range of devices and operating systems.</p>",
+  "link": "http://www.observium.org/",
+  "tweet":"@observium is a simple and easy to use tool to track health and status of your network"
+},
+
+{ "name": "Log & Event Manager",
+  "publisher": "solarwinds",
+  "license": ["Paid"],
+  "img":{
+    "src": "media/solarwinds-icon.png",
+    "alt": "solarwinds icon"
+  },
+  "desc": "<p>SolarWinds provides various IT management and monitoring tool. Log & Event Manager is one of them. It is a log management software, these logs can be used for security, compliance, and troubleshooting.</p> <p>A very distinct and useful feature is USB device monitoring. With it, you can get insight and the file activity with USB Analyzer.</p>",
+  "link": "http://www.solarwinds.com/log-event-manager",
+  "tweet":"Log & Event Manager is a log management software by solarwinds"
+},
+
+{ "name": "Prometheus",
+  "license": ["Open Source","Free"],
+  "img":{
+    "src": "media/prometheus-icon.png",
+    "alt": "Prometheus icon"
+  },
+  "desc": "<p>Prometheus is an Open Source monitoring and time series database solution to help you with metrics and alerting. Generate graphs and tables from the collected data with powerful queries.</p> <p>It has multiple modes for visualizing data. For more, it integrates with Grafana and a console template language.</p>",
+  "link": "https://prometheus.io/",
+  "tweet":"@PrometheusIO is an Open Source monitoring and time series database solution"
+},
+
+{ "name": "Ganglia",
+  "license": ["Open Source"],
+  "img":{
+    "src": "media/ganglia-icon.png",
+    "alt": "Ganglia icon"
+  },
+  "desc": "<p>A tool for monitoring clusters and Grids. It uses RRDtool for data storage and visualization. Ganglia is used by Berkeley, Twitter, Flickr and much more.</p> ",
+  "link": "http://ganglia.info/",
+  "tweet":"Ganglia - A tool for monitoring clusters and Grids."
+},
+
+{ "name": "Loggly",
+  "license": ["Free", "Paid"],
+  "img":{
+    "src": "media/loggly-icon.png",
+    "alt": "Loggly icon"
+  },
+  "desc": "<p>Cloud log management tool. Assists you in logging data intelligence for modern infrastructure. Provides real-time analysis of your logs and machine data. Monitor and view app performance, system behavior, and unusual activities across your whole stack.</p> <p>Loggly automatically recognizes common log formats and provides you a summary of all parsed logs. It integrates with Slack, HipChat, Jira and many other DevOps solutions. </p>",
+  "link": "https://www.loggly.com/",
+  "tweet":"@loggly - Cloud log management tool with data intelligence for modern infrastructure"
+},
+
+{ "name": "Papertrail",
+  "license": ["Free", "Paid"],
+  "img":{
+    "src": "media/papertrail-icon.png",
+    "alt": "Papertrail icon"
+  },
+  "desc": "<p>It offers hosted log management and delivers real-time tail and search, alerts, test files and syslog, and encryption.</p> <p>Track customer problems, error messages, app requests, slow DB queries, firewall policy decisions, config changes, etc. Enabling you to troubleshoot issues.</p>",
+  "link": "https://papertrailapp.com/",
+  "tweet":"@papertrailapp offers hosted log management and delivers real-time tail and search"
+},
+
+{ "name": "Cacti",
+  "license": ["Free"],
+  "img":{
+    "src": "media/cacti-icon.png",
+    "alt": "Cacti icon"
+  },
+  "desc": "<p>It is an <a href=http://www.rrdtool.org/ trarget=_blank>RRDTool-based</a> network graphing solution. Cacti provide network graphing with data storage. You can collect data from multiple sources with different data acquisition methods.</p> <p>Comes with user management features out of the box. It has an easy to use interface which helps you to understand and manage LAN (s) or complex networks with thousands of devices.</p>",
+  "link": "http://www.cacti.net/",
+  "tweet":"Cacti provide network graphing with data storage"
+},
+
+{ "name": "Scalyr",
+  "license": ["Paid"],
+  "img":{
+    "src": "media/scalyr-icon.png",
+    "alt": "Scalyr icon"
+  },
+  "desc": "<p>A SaaS platform for fast centralized log management, server monitoring, and alert system.</p> <p>Like other tools, it also collects and parses logs at a central place so that you can search, visualize and spot problems in less time.</p>",
+  "link": "https://www.scalyr.com/",
+  "tweet":"@scalyr - platform for fast centralized log management, server monitoring, and alerts"
+},
+
+{ "name": "Graylog",
+  "license": ["Open Source","Free"],
+  "img":{
+    "src": "media/graylog-icon.png",
+    "alt": "Graylog icon"
+  },
+  "desc": "<p>An Open Source and trusted log management tool for Security, Operations, and DevOps.</p> <p>Graylog can be used for Network Security Monitoring, server or service Monitoring & Alert. Collected data can be used for Compliance and Root Cause Analysis.</p> <p>The tool uses REST API for configuration settings and reporting. This gives you the flexibility to integrate it with your internal tools.</p>",
+  "link": "https://www.graylog.org/",
+  "tweet":"@graylog2 - An Open Source and trusted log management tool for Security, Operations, and DevOps"
+},
+
+{ "name": "Sensu",
+  "license": ["Open Source","Free","Paid"],
+  "img":{
+    "src": "media/sensu-icon.png",
+    "alt": "Sensu icon"
+  },
+  "desc": "<p>A complete and free software for full stack monitoring. With Sensu you can monitor almost anything. Fits well with other solutions on any platform.</p> <p>Monitor servers, services, application health, and business KPIs. Also, supports custom metrics. Get failure alerts before your users do.</p>",
+  "link": "https://sensuapp.org/",
+  "tweet":"@sensu - A complete and free software for full stack monitoring"
+}
+]
+
+
+}
+
+
+]
