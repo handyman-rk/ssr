@@ -4,6 +4,8 @@ const counter = require('./card/counter');
 import Filter from './filter';
 import More from './card/more';
 
+const data = require('../assets/data.json');
+
 class App extends Component {
 
     constructor() {
@@ -12,7 +14,7 @@ class App extends Component {
        "fe": false,
        "pop": false,
        "pd": {},
-        "sections": []
+        "sections": data;
 
      }
 
@@ -24,6 +26,8 @@ class App extends Component {
 
    }
 
+   /**
+
    componentDidMount(){
      fetch('https://idevop.org/assets/js/tool.json').then(response =>{
       if (!response.ok) throw Error('Response not ok')
@@ -34,6 +38,8 @@ class App extends Component {
        this.setState({"fe": true});
      });
    }
+
+   */
 
 
    rcf(){

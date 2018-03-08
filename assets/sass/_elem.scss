@@ -1,0 +1,241 @@
+// All elements CSS is declared here
+// Some common properties are also listed at the end
+// Some elements are still in development
+
+// Base button class
+.btn{
+  display: inline-block;
+  border: 0;
+  padding: 0 16px;
+  height: 40px;
+  line-height: 40px;
+  font-size: .8235rem;
+  font-weight: 500;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #F42;
+  color: #fff;
+  cursor: pointer;
+}
+
+a.btn{
+  color:#fff;
+}
+
+.btn:hover,
+.btn:active{
+  opacity: .88;
+  background: #000;
+}
+
+.btn-w{
+  background: #fff;
+  color: $font-normal;
+}
+
+a.btn-w{
+  color: $font-normal;
+}
+
+.btn-w:hover{
+  color: #fff;
+}
+
+// full container filling button
+.btn-100{
+  width: 100%;
+}
+
+a.btn:hover{
+  text-decoration: none;
+}
+
+// Button background for social sites
+.btn-facebook{
+  background: #3B5998;
+}
+.btn-twitter{
+  background: #55ACEE;
+}
+.btn-gp{
+  background: #dc4e41;
+}
+
+// Post sharer - at the page bottom
+.post-share{
+  margin: 3em 0 2em 0;
+  padding: 0 8px 0 50px;
+}
+
+//Author box
+.author-box{
+  display: block;
+  margin-bottom: 3em !important;
+
+  .author-img{
+    float: left;
+    margin-left: -16px;
+    border: 0;
+  }
+
+}
+
+.post-author{
+  padding: 0 60px;
+  font-size: .8499rem;
+}
+
+.author-bio{
+    margin-bottom: .654rem;
+}
+
+.author-contact{
+  margin-right: 8px;
+  .icon{
+    opacity: .65;
+  }
+}
+
+.author-contact:link, .author-contact:hover, .author-contact:active, .author-contact:visited{
+  color: $font-normal;
+  text-decoration: none;
+}
+
+.author-stat{
+  h5{
+    font-size: .8578rem;
+    color: $font-tolight;
+    margin-bottom: .34rem;
+  }
+  li{
+    display: inline-block;
+    margin-right: 1.8rem;
+    margin-bottom: .463rem;
+  }
+}
+
+.all-by-author{
+  float: right;
+  width: auto;
+  margin-right: 0;
+}
+
+// table of content style
+.toc{
+  float:left;
+  width: 200px;
+  overflow: hidden;
+  padding-left: .8rem;
+  margin: 60px 0 0 4%;
+  border-left: 1px solid #ccc;
+  margin-top: 60px;
+  .toc-h{
+    margin-bottom: 1.1rem;
+  }
+  li{
+    margin-bottom: .25rem;
+  }
+}
+
+// Adding contact form css
+.contact-form{
+  padding: 20px 80px;
+  label{
+    display: block;
+    font-size: 1.05679rem;
+  }
+
+  input, textarea{
+    width:100%;
+    margin: .5rem 0 1rem 0;
+    padding: 1rem;
+    font: inherit;
+    font-size: 1rem;
+  }
+
+  input:not(.btn){
+    color:inherit;
+  }
+
+  input{
+     height: 2.3rem;
+  }
+
+  textarea{
+    color:inherit;
+    resize: none;
+  }
+
+  .send-box{
+    width: 200px;
+    input{
+      padding: 0;
+      font-size: .8235rem;
+      font-weight: 500;
+    }
+  }
+
+}
+
+
+// common props
+.button, .icon-inline, caption, td, th {
+    vertical-align: middle;
+}
+
+@media only screen and (max-width:700px){
+
+  .author-box{
+    display: none;
+  }
+
+  .contact-form{
+    .send-box{
+      width: 100%;
+    }
+  }
+
+}
+
+@media only screen and (max-width:812px){
+
+  .post-share {
+   margin: 2em -12px;
+   padding: 0;
+  }
+
+  .contact-form{
+    padding: 20px 0;
+    .pr-4{
+      padding-right:0;
+    }
+    .pl-4{
+      padding-left:0;
+    }
+  }
+
+  .toc{
+    float: none;
+    width: auto;
+    margin-top: 30px;
+    border-left: none;
+
+    .toc-links{
+      border-top: 1px solid #eee;
+      padding-top: 1rem;
+    }
+  }
+
+}
+
+
+/*Adding responsiveness to elements */
+
+@media only screen and (max-width: 756px){
+
+  .u-share-on{
+    display: none;
+  }
+
+}

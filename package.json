@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "sass": "node-sass assets/sass/style.scss assets/style.css",
     "pack": "webpack --config webpack.config.js"
   },
   "author": "Rohit kumar",
   "license": "CC BY 4.0",
   "dependencies": {
+    "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },

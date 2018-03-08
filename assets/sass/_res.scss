@@ -1,0 +1,154 @@
+// responsive design for base css
+@media only screen and (max-width:700px){
+
+  .s-img-l, .s-img-r, img .s-img-l, img .s-img-r {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .title-inner{
+    display: block;
+    margin-left: -5.5%;
+    margin-right: -5.5%;
+    padding: 0 20px;
+  }
+
+  .vm .vt {
+    top: 25%;
+    left: 25%;
+    font-size: 1.35rem;
+    text-align: center;
+   }
+
+   .ply {
+    position: absolute;
+    top: 65%;
+    right: 50%;
+   }
+
+   .ply-btn{
+     height: 40px;
+     width: 40px;
+     margin-top: -33px;
+   }
+}
+
+@media only screen and (max-width: 812px) {
+
+  .title-inner{
+    display: block;
+  }
+
+  .title{
+   width: 100%;
+   padding-right: 0;
+  }
+
+  .author{
+    width: 100%;
+    margin-top: 6px;
+  }
+
+  .breadcrumb-inner {
+    padding: 0 20px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: -3.5%;
+    margin-right: -3.5%;
+  }
+
+   .post-half .by-line {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+   }
+
+   .s-img-l {
+     margin-left: 0;
+   }
+   .s-img-r, .post .s-img-r {
+     margin-right: 0;
+   }
+   .post img.img-center, .post .img-center {
+     margin: 1.5rem -6%;
+   }
+
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 1100px){
+
+  .title-inner{
+    margin-left: -4%;
+    margin-right: -4%;
+  }
+
+}
+
+
+/*for  max-width 1100px*/
+
+@media only screen and (max-width: 1100px) {
+
+  .post-half .title-inner{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2.22rem;
+  }
+
+  h2 {
+    font-size: 1.452rem;
+  }
+
+  h3 {
+    font-size: 1.22rem;
+  }
+
+  h4{
+    font-size: 1.11rem;
+  }
+
+  .img-header{
+    height: auto;
+    z-index: 355;
+
+  .article-meta{
+    padding: 0;
+    padding-top: 0;
+  }
+
+  .title-inner{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  }
+
+   .author-img{
+     width: 60px;
+     height: 60px;
+   }
+
+   .by-line{
+     padding-top: 5px;
+   }
+
+   .post-body ul, .post-body ol {
+    margin-left: 20px;
+  }
+
+   blockquote {
+    margin: 1.63rem 1rem;
+    font-size: 1.2445rem;
+    padding: 8px;
+
+    &::before{
+      font-size: 46px;
+    }
+  }
+
+}

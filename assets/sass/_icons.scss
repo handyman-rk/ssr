@@ -1,0 +1,306 @@
+// CSS for icons
+// All icons are combined in s single icons-sprite.svg file
+// File is located at /assets/img/file
+
+.icon {
+    background: url(https://idevop.org/assets/img/icons-sprite.svg) 1248px 1248px no-repeat;
+    background-size: 1248px 1248px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-inline {
+    display: inline-block;
+    margin-right: 3px;
+    position: relative;
+    top: -.1em;
+}
+
+// Bookmark
+.icon-bookmark{
+  background-position: 0 0;
+}
+
+.icon-bookmark-dark{
+  background-position: -16px -16px;
+}
+
+.icon-bookmark-light{
+  background-position: -32px -32px;
+}
+
+//briefcase
+.icon-briefcase-dark{
+  background-position: -48px -48px;
+}
+
+
+// Calendar
+.icon-calendar{
+  background-position: -64px -64px;
+}
+
+.icon-calendar-green{
+  background-position: -80px -80px;
+}
+
+.icon-calendar-dark{
+  background-position: -96px -96px;
+}
+
+.icon-calendar-light{
+  background-position: -112px -112px;
+}
+
+// Clock
+.icon-clock{
+  background-position: -128px -128px;
+}
+
+.icon-clock-dark{
+  background-position: -144px -144px;
+}
+
+.icon-clock-light{
+  background-position: -160px -160px;
+}
+
+
+//Comment
+.icon-comment{
+  background-position: -176px -176px;
+}
+
+.icon-comment-dark{
+  background-position: -192px -192px;
+}
+
+.icon-comment-light{
+  background-position: -208px -208px;
+}
+
+
+// Cookie
+.icon-cookie{
+  background-position: -224px -224px;
+}
+
+// facebook icons
+.icon-facebook{
+    background-position: -240px -240px;
+}
+
+.icon-facebook-dark{
+    background-position: -256px -256px;
+}
+
+.icon-facebook-light{
+    background-position: -272px -272px;
+}
+
+// Google
+.icon-gp{
+  background-position: -288px -288px;
+}
+
+.icon-gp-dark{
+  background-position: -304px -304px;
+}
+
+.icon-gp-light{
+  background-position: -320px -320px;
+}
+
+// Instagram
+.icon-instagram{
+  background-position: -336px -336px;
+}
+
+.icon-instagram-dark{
+  background-position: -352px -352px;
+}
+
+.icon-instagram-light{
+  background-position: -368px -368px;
+}
+
+// Linkedin
+.icon-linkedin{
+  background-position: -384px -384px;
+}
+
+.icon-linkedin-dark{
+  background-position: -400px -400px;
+}
+
+.icon-linkedin-light{
+  background-position: -416px -416px;
+}
+
+// Location
+.icon-location{
+  background-position: -432px -432px;
+}
+
+.icon-location-green{
+  background-position: -448px -448px;
+}
+
+.icon-location-dark{
+  background-position: -464px -464px;
+}
+
+.icon-location-light{
+  background-position: -480px -480px;
+}
+
+// Mail icons
+.icon-mail{
+    background-position: -496px -496px;
+}
+
+.icon-mail-dark{
+    background-position: -512px -512px;
+}
+
+.icon-mail-light{
+    background-position: -528px -528px;
+}
+
+// more
+.icon-more{
+  background-position: -544px -544px;
+}
+
+.icon-more-dark{
+  background-position: -560px -560px;
+}
+
+.icon-more-light{
+  background-position: -576px -576px;
+}
+
+// Pinterest
+.icon-pinterest{
+  background-position: -592px -592px;
+}
+
+.icon-pinterest-dark{
+  background-position: -608px -608px;
+}
+
+.icon-pinterest-light{
+  background-position: -624px -624px;
+}
+
+// Push
+.icon-push{
+  background-position: -640px -540px;
+}
+
+.icon-push-dark{
+  background-position: -656px -656px;
+}
+
+.icon-push-light{
+  background-position: -672px -672px;
+}
+
+
+// Reddit
+.icon-reddit{
+  background-position: -688px -688px;
+}
+
+.icon-reddit-dark{
+  background-position: -704px -704px;
+}
+
+.icon-reddit-light{
+  background-position: -720px -720px;
+}
+
+// RSS
+.icon-rss{
+  background-position: -736px -736px;
+}
+
+.icon-rss-dark{
+  background-position: -752px -752px;
+}
+
+.icon-rss-light{
+  background-position: -768px -768px;
+}
+
+// Search
+.icon-search{
+  background-position: -784px -784px;
+}
+
+.icon-search-dark{
+  background-position: -800px -800px;
+}
+
+.icon-search-light{
+  background-position: -816px -816px;
+}
+
+
+// Share
+.icon-share{
+  background-position: -832px -832px;
+}
+
+.icon-share-dark{
+  background-position: -848px -848px;
+}
+
+.icon-share-light{
+  background-position: -864px -864px;
+}
+
+// Tag
+.icon-tag{
+  background-position: -880px -880px;
+}
+
+
+// Twitter icon
+.icon-twitter{
+    background-position: -896px -896px;;
+}
+
+.icon-twitter-dark{
+    background-position: -960px -960px;;
+}
+
+.icon-twitter-light {
+    background-position: -976px -976px;;
+}
+
+// Whatsapp icon
+.icon-whatsapp{
+    background-position: -1104px -1104px;;
+}
+
+.icon-whatsapp-dark{
+    background-position: -1120px -1120px;;
+}
+
+.icon-whatsapp-light {
+    background-position: -1136px -1136px;;
+}
+
+// Youtube icon
+.icon-youtube{
+    background-position: -1200px -1200px;;
+}
+
+.icon-youtube-dark{
+    background-position: -1216px -1216px;;
+}
+
+.icon-youtube-light {
+    background-position: -1232px -1232px;;
+}

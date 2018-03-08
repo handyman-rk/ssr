@@ -1,0 +1,642 @@
+
+html {
+ font-size: 15.725px;
+}
+
+body{
+  font-family: $font-stack;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: $font-normal;
+}
+
+// Typohraphy
+h1,h2,h3,h4,h5,h6{
+  line-height: 1.145;
+  margin-bottom: 1.591rem;
+}
+
+//Too bold heading
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+}
+
+h1, .herotxt{
+  font-size: 2.9021rem;
+}
+
+h2{
+  font-size: 2.024rem;
+}
+
+h3{
+  font-size: 1.456rem;
+}
+
+h4{
+  font-size: 1.35rem;
+}
+
+h5, h6{
+  font-size: 1.11rem;
+}
+
+b, strong{
+  font-weight: 500;
+}
+
+i, em{
+  font-style: italic;
+}
+
+small{
+  font-size: 80%;
+}
+
+sub{
+  vertical-align: sub;
+}
+sup{
+  vertical-align: super;
+}
+
+abbr {
+    cursor: help;
+    border: 0;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid #e1e4e8;
+    margin: 1.5em 0;
+}
+
+p{
+  margin-bottom: 1.5rem;
+}
+
+// Global Links style
+a, a:link{
+    color: $link-color;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+  text-decoration: underline;
+}
+
+.post-body{
+  // ppost body link style
+  a, a:link{
+      color: $link-color;
+      border-bottom: 1px solid;
+  }
+
+  a:active, a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+// Short in-line quotes
+q{
+  quotes: inherit;
+
+  &::before{
+    content: open-quote;
+  }
+
+  &::after{
+    content: close-quote;
+  }
+}
+
+// Big block quote with cite
+blockquote{
+  quotes: inherit;
+  position: relative;
+  display: block;
+  padding: 8px;
+  font-size: 1.45rem;
+  font-style: italic;
+  margin: 1.63rem 3rem;
+
+  &::before{
+    position: absolute;
+    top: -1.265rem;
+    left: -1.265rem;
+    content: "\201C";
+    font-family: Georgia,serif;
+    font-size: 54px;
+    color: #ccc;
+  }
+
+  cite{
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #999999;
+
+    &::before{
+      content: "\2014 \2009";
+    }
+  }
+}
+
+// Too long quote
+.long-quote{
+  margin-left: 0;
+  border-left: 2px solid;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  color: #696f75;
+
+  &::before{
+    content: " ";
+  }
+}
+
+// Author link, image and bio stlyes
+.author{
+  display: block;
+  margin: 0 auto;
+  font-size: .785rem;
+
+  a{
+    font-size: .961rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+}
+
+.author-img, .author-img-s{
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+// Author image bigger one for Author box & Full page post
+.author-img{
+  width: 65px;
+  height: 65px;
+  border: 2px solid #fff;
+}
+
+// Tiny author image for helf-page post
+.author-img-s{
+    width: 40px;
+    height: 40px;
+    border: 0;
+}
+
+// Post date, author and category
+.published, .category{
+    font-size: .875rem;
+}
+
+.published{
+    margin-right: 8px;
+}
+
+.category{
+  margin-right: 10px;
+
+  &::before{
+    content: "\2022 \00a0";
+  }
+}
+
+// category line for half-page post
+.post-half .category::before{
+  content: " ";
+}
+
+.by-line{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.post-half .by-line{
+  padding-top: 8px;
+  font-size: .85rem;
+  color: $font-tolight;
+}
+
+// Post title for full-page post
+.title{
+  width: 75%;
+  padding-right: 10px;
+}
+
+// Post title for half-page post
+.post-half .title{
+  width: 100%;
+}
+
+// Article headers
+.article-header{
+  overflow: hidden;
+  &, a{
+    color: #fff;
+  }
+  a, a:hover{
+    text-decoration: none;
+  }
+}
+
+.post-half .article-header{
+  &, a{
+    color: $font-normal;
+  }
+}
+
+// Article header with image
+.img-header{
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 46vh;
+  z-index: 355;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .breadcrumbs{
+    background: none;
+  }
+  .article-meta{
+    background: none;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.62) 20%, rgba(250, 250, 250, 0) 80%);
+    padding: 0;
+    padding-top: 40px;
+  }
+
+  .title-inner{
+    padding-bottom: 4vh;
+    padding-top: 10vh;
+  }
+}
+
+// Breadcrumb navigation
+.breadcrumbs{
+  position: relative;
+  font-size: .84rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  z-index: 0;
+  background-image: linear-gradient(to right, #f6752e, #f54100);
+
+  ul li{
+    display: inline-block;
+    margin-right: 8px;
+    opacity: .7;
+
+    &::after{
+      height: 10px;
+      width: 10px;
+      margin-left: 10px;
+      content: "\276F";
+    }
+
+    &:last-of-type{
+      opacity: 1;
+
+      &::after{
+        content: " ";
+      }
+    }
+  }
+}
+
+.breadcrumb-inner {
+    height: 48px;
+    padding: 0 40px;
+    background: rgba(255, 255, 255, 0.1);
+    line-height: 48px;
+}
+
+.breadcrumb-article{
+    background-image: linear-gradient(to right,$primary-color,$secondary-color);
+}
+
+.article-meta{
+  background-image: linear-gradient(to right,$primary-color,$secondary-color);
+  padding: 25px 0;
+}
+
+.title-inner{
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  align-items: center;
+}
+
+// Lists style apply only to post body
+.post-body{
+  ul{
+    list-style: square;
+  }
+
+  ol{
+    list-style: decimal;
+  }
+
+  ul, ol{
+    margin: 1.2rem 0 1.2rem 30px;
+  }
+
+  li{
+    margin-bottom: 1rem;
+  }
+
+  ol li{
+    padding-left: 8px;
+  }
+
+  ul li{
+    padding-left: 3px;
+  }
+
+}
+
+// Image styles
+.content img{
+  max-width: 100%;
+  position: relative;
+}
+
+// Image caption base style
+figcaption{
+  color: $font-tolight;
+  font-size: .7788rem;
+  margin-top: -0.75rem;
+  line-height: 1.1;
+}
+
+// Camera icon before image caption
+.img-credit{
+  display: inline-block;
+  content:" ";
+  height: 16px;
+  width: 16px;
+  margin-left: -40px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background-image: url(assets/img/camera.svg);
+  background-size: cover;
+}
+
+// Normal in-line images & caption on image
+img.s-img, .s-img{
+  position: relative;
+  margin-bottom: 1rem;
+  figcaption{
+    position: absolute;
+    left: 0;
+    bottom: 7.1px;
+    background: rgba(12, 12, 12, 0.65);
+    padding: 3.5px;
+  }
+  .img-credit{
+    margin-left: 3px;
+  }
+}
+
+// Normal in-line images - at left
+.s-img-l{
+  float: left;
+  margin-left: -60px;
+  margin-right: 1.5rem;
+}
+
+// Normal in-line images - at right
+.s-img-r{
+  float: right;
+  margin-left: 1.5rem;
+  margin-right: -20px;
+}
+
+// image at the center
+.s-img-c{
+  display: block;
+  text-align: center;
+  margin: 1.5rem auto;
+  img{
+    margin-bottom: .7rem;
+  }
+}
+
+.post .s-img-r{
+  margin-right: -40px;
+}
+
+// Huge image in Center & caption below image
+img.img-center, .img-center{
+    margin: 1.5rem -20px 1.5rem -60px;
+    img{
+      margin-bottom: .7rem;
+    }
+}
+
+img.img-center, .img-center, img.s-img-c, .s-img-c{
+  figcaption{
+    padding: 0;
+    padding-bottom: 1rem;
+    background: none;
+    text-align: center;
+    margin-left: 45px;
+  }
+}
+
+.post img.img-center, .post .img-center{
+    margin: 1.5rem -60px 1.5rem -60px;
+}
+
+// iframe embedded resources - video, audio or doc
+.media-embed {
+	position:relative;
+  height:0;
+  padding-top:20px;
+	padding-bottom:56.25%;
+	overflow:hidden;
+  max-width: 100%;
+  margin: 2.5rem 0;
+}
+
+.media-embed iframe, .media-embed object, .media-embed embed {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+// stlying codes
+small code, li code, p code, small samp, li samp, p samp {
+    background-color: rgba(0,0,0,0.04);
+    padding: 1px 3px;
+    font-family: $font-code;
+    font-size: 14px;
+}
+
+.code-block{
+  position: relative;
+  padding: 20px 14px;
+  font-family: $font-code;
+  font-size: 14px;
+  margin-bottom: 14px;
+  border: none;
+  border-radius: 0;
+  overflow: auto;
+  background: #f8f5ec;
+
+  &::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 4px 14px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #c2c0bc;
+    background-color: #f1ede4;
+    content: "Code";
+  }
+}
+
+// Highlighted intro para
+.hlt{
+  font-size: 1.2234rem;
+}
+
+
+.silent-link:hover{
+    color: inherit;
+    text-decoration: none;
+}
+
+.fade{
+  opacity: 1;
+
+  &:hover{
+    transition: opacity 150ms ease-in;
+    opacity: .8;
+  }
+}
+
+.fade-up{
+  opacity: .8;
+
+  &:hover{
+    transition: opacity 100ms linear;
+    opacity: 1;
+  }
+}
+
+.intro::first-letter {
+    float: left;
+    vertical-align: top;
+    font-size: 3.3rem;
+    padding-right: 3px;
+    margin-top: -16px;
+}
+
+// border on right
+.border-r{
+  border-right: 1px solid $font-light;
+}
+
+// center the content
+.text-center{
+  text-align: center;
+}
+
+// white text color
+.text-w{
+  color:#fff;
+}
+
+// vertically center items
+.vert-c{
+  margin: auto;
+}
+
+// gray background - sp. for containers
+.bg-gray{
+  background-color: #F4F5F7;
+}
+
+// common style for center cover images
+.img-cc{
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+// color unordered lists
+ul .color-ul{
+  list-style-type: none;
+  li{
+    position: relative;
+  }
+  li::before{
+    background: #F42;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 7px;
+    left: -1.29em;
+    position: absolute;
+    top: .55em;
+    width: 7px;
+  }
+}
+
+// drop shadow around img or containers
+.shd{
+  box-shadow: 0px 0px 19px 1px rgba(0,0,0,0.10);
+}
+
+// youtube video embed css
+.ply{
+  position: absolute;
+  top: 50%;
+  right: 16%;
+}
+.ply-btn{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background: url(../../assets/img/play-1.svg);
+    background-size: cover;
+    background-position: center;
+    margin-left: 90px;
+    vertical-align: top;
+    margin-top: -40px;
+}
+
+.vm{
+  .vt{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.yt-grad{
+  background: linear-gradient(to right, rgba(2, 170, 176, 0.28), rgba(255, 255, 255, 0), rgba(0, 205, 172, 0.58));
+}
