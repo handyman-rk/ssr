@@ -4,7 +4,8 @@
   "description": "Server-side Rendering React from Scratch!",
   "main": "index.js",
   "engines": {
-    "node": "8.10.0"
+    "node": "8.10.0",
+    "npm": "5.7.1"
   },
   "scripts": {
     "start": "node index.js",
@@ -16,6 +17,7 @@
   "author": "Rohit kumar",
   "license": "CC BY 4.0",
   "dependencies": {
+    "compression": "^1.7.2",
     "express": "^4.16.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
