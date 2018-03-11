@@ -1,54 +1,14 @@
 // Outer wrapper
-.wrapper{
-  margin-left: 7%;
-  margin-right: 7%;
-  max-width: 1050px;
+.wrap-inner{
+  max-width: 980px;
   margin: 0 auto;
 }
-
-// Inner wrapper for centering content
-.wrap-inner{
-  margin-left: 12%;
-  margin-right: 12%;
-}
-
-// main - leaves 50px at top for header (fixed)
-.main{
-  margin-top: 50px;
-  overflow: hidden;
-}
-
-// Sidebar
-.sidebar{
-  overflow: hidden;
-  width: 28%;
-}
-
-//* article and page aligning elements *//
 
 // Content - leaves space between content and other elements
 // at top and bottom
 .content{
   padding-top: 48px;
   padding-bottom: 48px;
-}
-
-// Full page post layout
-.post{
-  padding-left: 4%;
-  padding-right: 6%;
-}
-
-// Half-page post layout (post with sidebar)
-.post-half{
-  width: 72%;
-  border-right: 1px solid #eee;
-  padding-right: 28px;
-}
-
-// Post content container
-.post-body{
-  padding: 0 20px 0 60px;
 }
 
 .row {
@@ -144,63 +104,6 @@
 }
 
 
-
-@media only screen and (max-width:812px){
-  .wrap-inner {
-   margin: 0 3.5%;
-  }
-
-  .post-body {
-    padding: 0;
-  }
-
-  .post-half {
-    width: 100%;
-    border: 0;
-    padding-right: 0;
-   }
-
-   .sidebar{
-     width: 100%;
-   }
-
-   // adjust column sizes
-   .flex{
-     .column {
-       width: 100%;
-     }
-
-     .column-2{
-       width: 100%;
-     }
-
-     .column-3{
-       width: 100%;
-     }
-
-     .column-4{
-       width: 100%;
-     }
-   }
-
-}
-
-@media only screen and (min-width:812px)and (max-width: 868px){
-
-  .post-body {
-    padding: 0 60px 0 60px;
-  }
-
-}
-
-@media only screen and (min-width:868px) and (max-width: 1100px){
-  .wrap-inner {
-   margin-left: 8%;
-   margin-right: 11%;
-  }
-
-}
-
 @media only screen and (max-width: 1100px) {
 
   .main{
@@ -210,20 +113,6 @@
   .content {
    padding-top: 32px;
    padding-bottom: 32px;
-  }
-
-  .wrapper{
-    margin-left: 4%;
-    margin-right: 4%;
-  }
-
-  .post {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .post-half{
-    padding-right: 20px;
   }
 
 

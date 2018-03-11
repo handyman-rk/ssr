@@ -1,112 +1,87 @@
 [
-{ "id": "scc",
-"title":"Collaboration and Communication Tools",
-"intro": "<p>Welcome to the very first collaboration and communication software section of DevOps tools.</p><p>Before moving forward I would like to thank <a href=\"https://www.atlassian.com/\">Atlassian</a> for delivering 4 awesome collaboration tools for teams.</p> <p>Every team either small or large has a goal to achieve. To accomplish it in less time without confusion and frustration you need to have a plan, a roadmap and unity.</p><p>Specially DevOps teams have a lot to do. Which makes it important to have shared responsibilities, transparency, ability to provide and react to feedbacks faster. So that you can release with confidence and sanity knowing the information you have is always current.</p><p>To establish a fluent communication channel and a collaborative environment pick some tools from the list below.</p>",
+{ "id": "ay",
+"title":"Apps of the Year",
+"intro": "<p>These apps have been chosen by our App Store editors as the best on the App Store last year.</p>",
 "apps": [
 
-       { "name": "Slack",
-         "license": ["Free", "Paid"],
+       { "name": "Netflix",
+         "publisher": "Netflix, Inc",
+         "price": "Free",
          "img":{
-           "src": "media/slack-app-icon.png",
-           "alt": "slack app icon"
+           "src": "media/netflix.jpg",
+           "alt": "netflix app icon"
          },
-         "desc": "<p>Slack is the most popular and easy to use team communication app. The hosted platform used by Millions for transparent communication across workplace, remote offices and remote teams. </p> <p>Slack uses channels to organize projects, topics, teams or anything of your choice. You can also create private channels. Supports almost every way you may use including text, emoji, attachment, video and audio calls and much more. </p>    <p>Slack supports <a href=https://get.slack.help/hc/en-us/articles/204368833c target=_blank>Nonprofits</a> and <a href=https://get.slack.help/hc/en-us/articles/206646877 target=_blank>Education</a> with special discount offers. </p>",
-         "link": "https://slack.com/",
-         "tweet":"Slack (@SlackHQ) - The app for easy and transparent communication for teams"
+         "desc": "<p>Watch TV shows and movies recommended just for you, including award-winning Netflix original series, movies, and documentaries.</p><p>Netflix has something for everyone. </p>",
+         "link": "https://itunes.apple.com/us/app/netflix/id363590051?mt=8&v0=WWW-NAUS-ITSTOP100-GROSSINGAPPS&l=en&ign-mpt=uo%3D4",
+         "tweet":"Watch TV shows and movies recommended just for you"
        },
 
-       { "name":"HipChat",
-         "publisher": "Atlassian",
-         "license": ["Free", "Paid"],
+       { "name":"Pandora Music",
+         "publisher": "Pandora Media, Inc",
+         "price": "Free",
          "img":{
-           "src": "media/hipchat-icon.png",
-           "alt": "hipchat icon"
+           "src": "media/pandora.jpg",
+           "alt": "pandora icon"
          },
-         "desc": "<p>If your team loves chatting, you will love it. HipChat is a team communication software based on ChatOps concept built for businesses.</p> <p>Share ideas, files and discuss projects in group chat, video chat or by screen sharing. No matter where you are or what device you have, be always a part of your team's success..</p> <p>HipChat is simple to use as WhatsApp and Skype with great productivity results. Integrates with most tools that you may be using. </p><p>If you are worried about security or data lockup, you can host HipChat on your own private server. </p>",
-         "link": "https://www.hipchat.com/",
-         "tweet":"@HipChat is a team communication software built for businesses "
+         "desc": "<p>Pandora gives you a personalized music experience that continually evolves with your tastes.</p><p>Create stations from your favorite songs, artists or genres. Or search browse to find recommended stations for your mood or activity.</p>",
+         "link": "https://itunes.apple.com/us/app/pandora-music/id284035177?mt=8&v0=WWW-NAUS-ITSTOP100-GROSSINGAPPS&l=en&ign-mpt=uo%3D4",
+         "tweet":"Pandora gives you a personalized music experience that continually evolves with your tastes"
        },
-
-       { "name": "Trello",
-         "publisher": "Atlassian",
-         "license": ["Free", "Paid"],
+       { "name":"Hulu: Watch TV Shows & Movies",
+         "publisher": "Hulu, LLC",
+         "price": "Free",
          "img":{
-           "src": "media/trello-icon.png",
-           "alt": "trello icon"
+           "src": "media/hulu.jpg",
+           "alt": "hulu icon"
          },
-         "desc": "<p>Trello is a team collaboration tool. While working on a project your team needs to have the track of activities, priorities and a lot more.</p> <p>That&#39;s what Trello does, it provides you a blank board to organize and prioritize tasks in a flexible way with easy to use drag and drop interface makes managing work a fun. </p> <p>Don&#39;t just name cards, add description, attachments, labels, checklist, comments, and more to better track progress..</p>",
-         "link": "https://trello.com/",
-         "tweet":"@trello is a team collaboration tool to organize and prioritize tasks in a flexible way"
-       },
-
-       { "name":"Asana",
-         "license": ["Free", "Paid"],
-         "img":{
-           "src": "media/asana-icon.png",
-           "alt": "asana icon"
-         },
-         "desc": "<p>A dashboard to track tasks, project progress and communicate with team members. Asana is a bit smart in terms of progress tracking. It adds a progress card to tasks so that you can monitor their progress anytime.</p> <p>You can have smart conversation with control on messages. and a lot more. There is a lot more to explore. Their feature and integration list is too long.</p>",
-         "link": "https://asana.com/",
-         "tweet":"@asana - A dashboard to track your project and communicate with team members"
+         "desc": "<p>Enjoy all your TV in one place with a new Hulu experience – more personalized and intuitive than ever before.</p><p> The choice is yours - select a plan featuring Hulu’s entire streaming library, or if you’ve subscribed through Hulu to a plan that includes Live TV</p>",
+         "link": "https://itunes.apple.com/us/app/hulu-watch-tv-shows-movies/id376510438?mt=8&v0=WWW-NAUS-ITSTOP100-GROSSINGAPPS&l=en&ign-mpt=uo%3D4",
+         "tweet":"Enjoy all your TV in one place with a new Hulu experience"
        }
+
    ]
 
 
 },
 
 {
-"id": "sco",
-"title": "Development Tools",
-"intro": "It's hard to suggest coding tools for DevOps. They program in several languages in different environments. So I have added some common and popular tools.",
+"id": "gy",
+"title": "Games of the Year",
+"intro": "<p>These games have been chosen by our App Store editors as the best on the App Store last year.</p>",
 "apps": [
- { "name": "Git",
-   "license": ["Open Source","Free"],
-   "img":{
-     "src": "media/git-icon.png",
-     "alt": "git icon"
-   },
-   "desc": "<p>Git is a must have free and open source distributed version control system. Git can be used everywhere from small to very large projects, not neccessarly development works.</p> <p>It is fast, efficient and works on all platforms. Also it's easy to learn and use.</p>",
-   "link": "https://git-scm.com/",
-   "tweet":"Git is a must have free and open source tool for version control"
- }
-]
-},
-
-{
-"id": "sci",
-"title": "Continuous Integration Tools",
-"intro": "It's hard to suggest coding tools for DevOps. They program in several languages in different environments. So I have added some common and popular tools.",
-"apps": [
- { "name": "Jenkins",
-   "license": ["Open Source","Free"],
-   "img":{
-     "src": "media/jenkins-icon.png",
-     "alt": "Jenkins icon"
-   },
-   "desc": "<p>A well known name in DevOps community and the leading open source automation server. There are lots of plugins available to reduce your manual work. Jenkins can be configured to build code, automatically run tests, and push to staging or production.</p><p> It can also create Docker containers to run your application.</p>",
-   "link": "https://jenkins.io/index.html",
-   "tweet":"Jenkins (@jenkinsci) - An Open Source Automation Server to automate any project"
- },
- { "name": "Travis CI",
-   "license": ["Free", "Paid"],
-   "img":{
-     "src": "media/travis-ci-icon.png",
-     "alt": "Travis CI icon"
-   },
-   "desc": "<p>Travis is continuous integration and delivery service for projects on GitHub. It is free for Open Source projects and paid for private repositories.</p> <p>A great tool for automatic project sync and running testing on it. If test is ok Deploy in minutes!</p> ",
-   "link": "https://travis-ci.org/",
-   "tweet":"@travisci is a continuous integration and delivery service for GitHub projects"
- },
- { "name": "Circle CI",
-   "license": ["Free", "Paid"],
-   "img":{
-     "src": "media/circle-ci-icon.png",
-     "alt": "Circle CI icon"
-   },
-   "desc": "<p>Another continuous integration and delivery platform. Helps software teams release faster and reliable code with confidence by automating the build, test, and deploy process. </p> <p>The first linux container is free with some limits. Else it's a paid tool.</p>",
-   "link": "https://circleci.com/",
-   "tweet":"@circleci- continuous integration and delivery platform to automate any project"
- }
+  { "name":"Clash of Clans ",
+    "publisher": "Supercell",
+    "price": "Free",
+    "img":{
+      "src": "media/coc.jpg",
+      "alt": "coc icon"
+    },
+    "desc": "<p>Join millions of players worldwide as you build your village, raise a clan, and compete in epic Clan Wars!</p><p>Mustachioed Barbarians, fire wielding Wizards, and other unique troops are waiting for you! Enter the world of Clash!</p>",
+    "link": "https://itunes.apple.com/us/app/clash-of-clans/id529479190?mt=8&v0=WWW-NAUS-ITSTOP100-GROSSINGAPPS&l=en&ign-mpt=uo%3D4",
+    "tweet":"Join millions of players worldwide as you build your village"
+  },
+  { "name":"MARVEL Contest of Champions",
+    "publisher": "Marvel",
+    "price": "Free",
+    "img":{
+      "src": "media/mcc.jpg",
+      "alt": "mcc icon"
+    },
+    "desc": "<p>Prepare for epic versus-fighting action with your favorite Marvel Super Heroes & Super Villains in the ultimate cosmic showdown! Spider-Man, Iron Man, Wolverine & more await your summons to battle! Assemble a team & begin your quest to become the Ultimate Marvel Champion!</p>",
+    "link": "https://itunes.apple.com/us/app/marvel-contest-of-champions/id896112560?mt=8&v0=WWW-NAUS-ITSTOP100-GROSSINGAPPS&l=en&ign-mpt=uo%3D4",
+    "tweet":"Prepare for epic versus-fighting action with your favorite Marvel Super Heroes"
+  },
+  { "name":"Candy Crush Saga",
+    "publisher": "King",
+    "price": "Free",
+    "img":{
+      "src": "media/ccs.jpg",
+      "alt": "Candy Crush Saga icon"
+    },
+    "desc": "<p>Start playing Candy Crush Saga today - loved by millions of players around the world.</p><p>With over a trillion levels played, this match 3 puzzle game is one of the most popular mobile games of all time!</p>",
+    "link": "https://itunes.apple.com/us/app/candy-crush-saga/id553834731?mt=8&v0=WWW-NAUS-ITSTOP100-GROSSINGAPPS&l=en&ign-mpt=uo%3D4",
+    "tweet":"Start playing Candy Crush Saga today"
+  }
 ]
 }
 

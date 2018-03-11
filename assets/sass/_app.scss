@@ -1,42 +1,8 @@
 
-.tools-header{
-    background-image: url(../../contact-3.jpg); //linear-gradient(to left, #46EEAA, #2cbfc7); //linear-gradient(to right, #944bd0, #5975e0);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #FFF;
-    margin: 0;
-    padding: 1px 100px 20px 100px;
-    z-index: 656;
-    h2{
-      line-height: 1.65;
-    }
-}
-
-h3{
-  font-weight: 400;
-}
-
-
-.filter{
-  li{
-    display: inline-block;
-  }
-  .btn{
-    margin-bottom: 1.2rem;
-    margin-right: .70rem;
-    padding: 0 20px;
-    border-radius: 50px;
-  }
-  .checked{
-    color: #fff;
-    background-color: #000;
-  }
-}
-
 .content{
   background: whitesmoke;
 }
+
 
 .app-card{
   .btn{
@@ -112,6 +78,7 @@ h3{
 
 
 
+
 .section{
   margin-bottom: 6rem;
   background-image: url(../../media/line.svg);
@@ -135,10 +102,6 @@ h3{
 .app-card{
   display: flex;
   box-shadow: 0 20px 20px rgba(0,0,0,.08); //5px 25px 30px -25px rgba(34,34,34,.25);
-
-  p{
-    margin-bottom: .82rem;
-  }
 }
 
 .app-no{
@@ -201,14 +164,6 @@ h3{
   vertical-align: middle;
 }
 
-.m-app-link{
-  display: none;
-}
-
-.more{
-  display: none;
-}
-
 //section top borders - testing only
 @mixin topbar($color) {
   border-top: 4px solid $color;
@@ -220,224 +175,4 @@ h3{
 
 #sml{
   @include topbar(#5976de);
-}
-
-
-// responsive css
-
-@media screen and (max-width: 580px) {
-  .section-intro{
-    padding: 14px;
-    margin-bottom: 32px;
-  }
-
-  .app-card{
-    padding: 12px;
-    padding-bottom: 5px;
-    margin-bottom: 0;
-    font-size: 1rem;
-    border-top: 1.5px solid #eee;
-  }
-
-  .col-left {
-    margin-right: 8px;
-  }
-
-  .app-icon{
-    height: 36px;
-    width: 36px;
-    border: none;
-    border-radius: 0;
-  }
-
-  .app-meta{
-    margin-bottom: 0;
-  }
-
-  .app-meta h3 {
-    font-size: 1.1rem;
-  }
-
-  .app-lic {
-    font-size: .858rem;
-    color: #868686;
-  }
-
-  .pop .btn {
-    padding: 0;
-    height: 16px;
-    line-height: 20px;
-    text-transform: none;
-    background: none;
-    color: inherit;
-   }
-
-  .m-app-link {
-    display: flex;
-    justify-content: space-around;
-    background: #fff;
-    border-top: 1px solid #eee;
-    padding: 6px 0;
-   }
-
-  .sec-desc,
-  .app-no,
-  .connector,
-  .publisher,
-  .app-intro,
-  hr,
-  .app-link{
-    display: none;
-  }
-
-  .more{
-    display: block;
-    margin: auto;
-    margin-right: 0;
-    a{
-      padding: 14px 6px;
-    }
-
-  }
-
-  .pop{
-    position: fixed;
-    top: 45px;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background: #fff;
-    padding: 20px 14px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    .app-head{
-      display: flex;
-    }
-    .app-icon{
-      margin-right: 10px;
-      height: 40px;
-      width: 40px;
-    }
-    .app-meta {
-    margin-bottom: 12px;
-    }
-    h3 {
-    font-size: 1.4rem;
-   }
-   .app-intro {
-    display: block;
-    font-size: .85rem;
-   }
-   p {
-    margin-bottom: .9rem;
-  }
-
-  }
-  .closepop{
-    position: absolute;
-    right: 0;
-    a{
-      font-size: 1.85rem;
-      padding: 10px;
-    }
-    a, a:hover{
-      color: #767677;
-      text-decoration: none;
-    }
-  }
-
-}
-
-@media screen and (min-width:580px) and (max-width:756px) {
-  .section-intro, .app-card{
-    padding: 23px;
-    margin-bottom: 36px;
-  }
-
-  .app-card{
-    font-size: .94rem;
-  }
-
-  .sec-desc{
-    height: 150px;
-    overflow: hidden;
-  }
-
-  .current, .total {
-    font-size: 1.46rem;
-  }
-
-  .app-icon{
-    height: 76px;
-    width: 76px;
-  }
-
-  .col-left {
-    margin-right: 12px;
-  }
-
-  .app-meta h3 {
-   font-size: 1.86rem;
-  }
-
-  .app-intro{
-    height: 90px;
-    overflow: hidden;
-  }
-
-  .app-card hr{
-    margin: 10px 0 14px 0;
-  }
-
-  .app .btn{
-    font-size: .8rem;
-      padding: 0 14px;
-      border-radius: 40px;
-      height: 1.6rem;
-      line-height: 1.66rem;
-      text-transform: none;
-  }
-  .app-link a {
-      margin-right: .65rem;
-  }
-
-
-}
-
-@media screen and (max-width:756px) {
-  .section{
-    background: none;
-    margin-bottom: 4rem;
-  }
-
-
-}
-
-@media screen and (min-width:756px) and (max-width:1000px) {
-  .section-intro, .app-card{
-    padding: 30px;
-    margin-bottom: 46px;
-  }
-
-  .app-meta h3 {
-   font-size: 2.2rem;
-  }
-
-  .app-icon{
-    height: 100px;
-    width: 100px;
-  }
-}
-
-@media screen and (max-width:1000px) {
-
-   .tools-header{
-      padding: 10px 3%;
-      .mt-4{
-        margin-top: 0;
-      }
-   }
-
-
-
 }
