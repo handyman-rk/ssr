@@ -10,13 +10,9 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _cardLeft = require('./card-left');
+var _card = require('./card');
 
-var _cardLeft2 = _interopRequireDefault(_cardLeft);
-
-var _cardRight = require('./card-right');
-
-var _cardRight2 = _interopRequireDefault(_cardRight);
+var _card2 = _interopRequireDefault(_card);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26,36 +22,70 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Card = function (_Component) {
-  _inherits(Card, _Component);
+var counter = require('./counter');
 
-  function Card() {
-    _classCallCheck(this, Card);
+var App = function (_Component) {
+  _inherits(App, _Component);
 
-    return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).apply(this, arguments));
+  function App() {
+    _classCallCheck(this, App);
+
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
+
+    _this.state = {};
+
+    return _this;
   }
 
-  _createClass(Card, [{
-    key: 'Cardbaker',
-    value: function Cardbaker(props) {
-
-      var cards = [];
-      var start = props.start;
+  _createClass(App, [{
+    key: 'FetchErrorHandler',
+    value: function FetchErrorHandler(props) {
+      if (props.err) {
+        return _react2.default.createElement(
+          'div',
+          null,
+          _react2.default.createElement(
+            'h3',
+            { className: 'text-center' },
+            'Error fetching data'
+          )
+        );
+      } else {
+        return null;
+      }
+    }
+  }, {
+    key: 'Sections',
+    value: function Sections(props) {
+      var sec = [],
+          i = 0,
+          start = 0;
       var _iteratorNormalCompletion = true;
       var _didIteratorError = false;
       var _iteratorError = undefined;
 
       try {
-        for (var _iterator = props.apps[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        for (var _iterator = props.sections[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
           var key = _step.value;
 
-          if (!key.hs || key.hs < 0) {
-            start++;
-            cards.push(_react2.default.createElement(
-              'div',
-              { className: 'app-card', id: key.name, key: key.name },
-              _react2.default.createElement(_cardLeft2.default, { img: key.img, appno: start, totalapps: props.totalapps }),
-              _react2.default.createElement(_cardRight2.default, { name: key.name, app: key })
+          if (!key.hs) {
+            i++;
+            start = counter.nextCount(props.counts, i);
+            sec.push(_react2.default.createElement(
+              'section',
+              { className: 'section', id: key.id, key: key.id },
+              _react2.default.createElement(
+                'div',
+                { className: 'section-intro' },
+                _react2.default.createElement(
+                  'h2',
+                  null,
+                  ' ',
+                  key.title
+                ),
+                _react2.default.createElement('div', { className: 'sec-desc', dangerouslySetInnerHTML: { __html: key.intro } })
+              ),
+              _react2.default.createElement(_card2.default, { apps: key.apps, start: start, totalapps: props.totalapps })
             ));
           }
         }
@@ -77,18 +107,24 @@ var Card = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        cards
+        sec
       );
     }
   }, {
     key: 'render',
     value: function render() {
-
-      return _react2.default.createElement(this.Cardbaker, { apps: this.props.apps, start: this.props.start, totalapps: this.props.totalapps });
+      var counts = counter.counter(this.props.sections);
+      var total = counter.getTotal(counts);
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(this.FetchErrorHandler, { err: this.props.fetch_error }),
+        _react2.default.createElement(this.Sections, { sections: this.props.sections, totalapps: total, counts: counts })
+      );
     }
   }]);
 
-  return Card;
+  return App;
 }(_react.Component);
 
-exports.default = Card;
+exports.default = App;

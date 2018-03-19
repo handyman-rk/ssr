@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom';
 
 import App from './components/app';
 
-ReactDOM.render(
-  <App />,
+var props = window.__STATE__;
+//delete window.__STATE__;
+
+ReactDOM.hydrate(
+  <App {...props}/>,
   document.getElementById('app')
 );

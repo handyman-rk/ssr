@@ -1,18 +1,11 @@
 const express = require('express'),
           app = express(),
-  compression = require('compression'),
          path = require('path');
-
-//SSR function import
-const ssr = require('./views/server');
 
 
 // Serving static files
 app.use('/assets', express.static(path.resolve(__dirname, 'assets')));
 app.use('/media', express.static(path.resolve(__dirname, 'media')));
-
-// Using Gzip compression
-app.use(compression())
 
 // hide powered by express
 app.disable('x-powered-by');
@@ -21,32 +14,42 @@ app.disable('x-powered-by');
 app.listen(process.env.PORT || 3000);
 
 
+// our apps data model
+const data = require('./assets/data.json');
+
+// demo state
+var state = {
+  "fetch_error": false,
+  "sections": []
+}
+
+//SSR function import
+const ssr = require('./views/server');
+
 // server rendered home page
 app.get('/', (req, res) => {
-  let content = ssr();
-  let response = html("Server Rendered Page", content);
-  res.setHeader('Cache-Control', 'assets, max-age=604800')
-  res.send(response);
-});
-
-// client sider endering
-app.get('/client', (req, res) => {
-  let response = html("Renders on Client", " ");
+  state.sections = data;
+  let content = ssr(state);
+  let response = html("Server Rendered Page", state, content);
   res.setHeader('Cache-Control', 'assets, max-age=604800')
   res.send(response);
 });
 
 // tiny trick to stop server during localdevelopment
-if(!process.env.PORT){
+
   app.get('/exit', (req, res) => {
-    res.send("shutting down");
-    process.exit(0);
+    if(process.env.PORT) {
+      res.send("Sorry, the server denies your request");
+    } else {
+      res.send("shutting down");
+      process.exit(0);
+    }
+
   });
-}
 
 
 // html skeleton provider
-function html(title, content){
+function html(title, state = {}, content = " "){
   let page = `<!DOCTYPE html>
               <html lang="en">
               <head>
@@ -60,7 +63,10 @@ function html(title, content){
                       <!--- magic happens here -->  ${content}
                    </div>
                 </div>
-                <script src="assets/bundle.js"></script>
+                <script>
+                   window.__STATE__ = ${JSON.stringify(state)}
+                </script>
+                <script src="assets/client.js"></script>
               </body>
               `;
 

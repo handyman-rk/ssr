@@ -4,12 +4,12 @@ module.exports = {
   entry: "./src/client.js",
   output: {
     path: path.resolve(__dirname, 'assets'),
-    filename: "bundle.js"
+    filename: "client.js"
   },
   module: {
     rules: [
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
     ]
  }
- 
+
 }

@@ -17,10 +17,11 @@
   "author": "Rohit kumar",
   "license": "CC BY 4.0",
   "dependencies": {
-    "compression": "^1.7.2",
     "express": "^4.16.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

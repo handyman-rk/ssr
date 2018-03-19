@@ -1,46 +1,8 @@
 import React, {Component} from 'react';
-import Card from './card/card';
-const counter = require('./card/counter');
-
-const data = require('../../assets/data.json');
+import Card from './card';
+const counter = require('./counter');
 
 class App extends Component {
-
-    constructor() {
-     super();
-     this.state = {
-       "fe": false,
-        "sections": data//[]
-     }
-
-   }
-
-
-
-   componentDidMount(){
-     fetch('assets/data.json').then(response =>{
-      if (!response.ok) throw Error('Response not ok')
-       return response.json();
-      }).then(json => {
-        this.setState({"sections" : json});
-      }).catch(err =>{
-       this.setState({"fe": true});
-     });
-   }
-
-
-  Feh(props){
-    if (props.err) {
-      return(
-        <div>
-          <h3 className="text-center">Error fetching data</h3>
-        </div>
-      );
-    } else {
-      return null;
-    }
-  }
-
 
   Sections(props){
     let sec = [], i=0, start=0;
@@ -68,13 +30,11 @@ class App extends Component {
   }
 
   render() {
-    //this.setState({"sections" : data});
-    let counts = counter.counter(this.state.sections);
+    let counts = counter.counter(this.props.sections);
     let total = counter.getTotal(counts);
     return (
        <div>
-         <this.Feh err={this.state.fe} />
-         <this.Sections sections={this.state.sections} totalapps={total} counts={counts}/>
+         <this.Sections sections={this.props.sections} totalapps={total} counts={counts}/>
        </div>
     );
   }
