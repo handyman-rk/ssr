@@ -78,6 +78,7 @@ function html(title, state = {}, content = ""){
                 <meta charset="utf-8">
                 <title> ${title} </title>
                 <link href="assets/style.css" rel="stylesheet">
+                <meta name="google-site-verification" content="qE1qNLn82RtfjKrtO-y8kh1G-mn2uqB65eGCY-EMSbM" />
               </head>
               <body>
                 <div class="content">
