@@ -8,10 +8,10 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _appClient = require('./components/appClient');
+var _pureClientApp = require('./components/pure-client-app');
 
-var _appClient2 = _interopRequireDefault(_appClient);
+var _pureClientApp2 = _interopRequireDefault(_pureClientApp);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_appClient2.default, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(_pureClientApp2.default, null), document.getElementById('app'));
