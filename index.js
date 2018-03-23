@@ -35,6 +35,13 @@ app.get('/', (req, res) => {
   res.send(response);
 });
 
+// Pure client side rendered page
+app.get('/client', (req, res) => {
+  let response = html('Client Side Rendered page')
+  res.setHeader('Cache-Control', 'assets, max-age=604800')
+  res.send(response);
+});
+
 // tiny trick to stop server during localdevelopment
 
   app.get('/exit', (req, res) => {
@@ -49,8 +56,23 @@ app.get('/', (req, res) => {
 
 
 // html skeleton provider
-function html(title, state = {}, content = " "){
-  let page = `<!DOCTYPE html>
+function html(title, state = {}, content = ""){
+  let scripts, page;
+
+  if(content){
+    scripts = `
+               <script>
+                  window.__STATE__ = ${JSON.stringify(state)}
+               </script>
+               <script src="assets/client.js"></script>
+              `;
+  } else {
+    scripts = `
+               <script src="assets/bundle.js"></script>
+              `;
+  }
+
+     page = `<!DOCTYPE html>
               <html lang="en">
               <head>
                 <meta charset="utf-8">
@@ -63,10 +85,7 @@ function html(title, state = {}, content = " "){
                       <!--- magic happens here -->  ${content}
                    </div>
                 </div>
-                <script>
-                   window.__STATE__ = ${JSON.stringify(state)}
-                </script>
-                <script src="assets/client.js"></script>
+                ${scripts}
               </body>
               `;
 
