@@ -36,8 +36,8 @@ var App = function (_Component) {
   }
 
   _createClass(App, [{
-    key: 'componentWillMount',
-    value: function componentWillMount() {
+    key: 'componentDidMount',
+    value: function componentDidMount() {
       var dispatch = this.props.dispatch;
 
       dispatch((0, _actions.fetchAppsIfNeeded)());
@@ -74,8 +74,6 @@ var App = function (_Component) {
 }(_react.Component);
 
 function mapStateToProps(state) {
-  console.log("state");
-  console.log(state);
   var isFetching = state.isFetching,
       apps = state.apps;
 
