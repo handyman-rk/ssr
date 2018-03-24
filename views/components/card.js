@@ -39,25 +39,24 @@ var Card = function (_Component) {
     key: 'Cardbaker',
     value: function Cardbaker(props) {
 
-      var cards = [];
-      var start = props.start;
+      var cards = [],
+          cardNumber = 1;
+
       var _iteratorNormalCompletion = true;
       var _didIteratorError = false;
       var _iteratorError = undefined;
 
       try {
         for (var _iterator = props.apps[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-          var key = _step.value;
+          var app = _step.value;
 
-          if (!key.hs || key.hs < 0) {
-            start++;
-            cards.push(_react2.default.createElement(
-              'div',
-              { className: 'app-card', id: key.name, key: key.name },
-              _react2.default.createElement(_cardLeft2.default, { img: key.img, appno: start, totalapps: props.totalapps }),
-              _react2.default.createElement(_cardRight2.default, { name: key.name, app: key })
-            ));
-          }
+          cards.push(_react2.default.createElement(
+            'div',
+            { className: 'app-card', key: app.name },
+            _react2.default.createElement(_cardLeft2.default, { img: app.img, appno: cardNumber, totalapps: props.totalapps }),
+            _react2.default.createElement(_cardRight2.default, { name: app.name, app: app })
+          ));
+          cardNumber++;
         }
       } catch (err) {
         _didIteratorError = true;
@@ -77,14 +76,16 @@ var Card = function (_Component) {
       return _react2.default.createElement(
         'div',
         null,
-        cards
+        ' ',
+        cards,
+        ' '
       );
     }
   }, {
     key: 'render',
     value: function render() {
 
-      return _react2.default.createElement(this.Cardbaker, { apps: this.props.apps, start: this.props.start, totalapps: this.props.totalapps });
+      return _react2.default.createElement(this.Cardbaker, { apps: this.props.apps, totalapps: this.props.totalapps });
     }
   }]);
 

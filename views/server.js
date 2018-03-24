@@ -6,15 +6,28 @@ var _react2 = _interopRequireDefault(_react);
 
 var _server = require('react-dom/server');
 
-var _server2 = _interopRequireDefault(_server);
+var _reactRedux = require('react-redux');
 
-var _appServer = require('./components/appServer');
+var _configureStore = require('./redux/configureStore');
 
-var _appServer2 = _interopRequireDefault(_appServer);
+var _configureStore2 = _interopRequireDefault(_configureStore);
+
+var _app = require('./components/app');
+
+var _app2 = _interopRequireDefault(_app);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-module.exports = function render(data) {
-  var content = _server2.default.renderToString(_react2.default.createElement(_appServer2.default, data));
-  return content;
+module.exports = function render(initialState) {
+  // Model the initial state
+  var store = (0, _configureStore2.default)(initialState);
+  var content = (0, _server.renderToString)(_react2.default.createElement(
+    _reactRedux.Provider,
+    { store: store },
+    _react2.default.createElement(_app2.default, null)
+  ));
+
+  var preloadedState = store.getState();
+
+  return { content: content, preloadedState: preloadedState };
 };

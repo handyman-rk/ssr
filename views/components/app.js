@@ -10,6 +10,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRedux = require('react-redux');
+
+var _actions = require('../redux/actions');
+
 var _card = require('./card');
 
 var _card2 = _interopRequireDefault(_card);
@@ -22,8 +26,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var counter = require('./counter');
-
 var App = function (_Component) {
   _inherits(App, _Component);
 
@@ -34,70 +36,35 @@ var App = function (_Component) {
   }
 
   _createClass(App, [{
-    key: 'Sections',
-    value: function Sections(props) {
-      var sec = [],
-          i = 0,
-          start = 0;
-      var _iteratorNormalCompletion = true;
-      var _didIteratorError = false;
-      var _iteratorError = undefined;
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      var dispatch = this.props.dispatch;
 
-      try {
-        for (var _iterator = props.sections[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-          var key = _step.value;
-
-          if (!key.hs) {
-            i++;
-            start = counter.nextCount(props.counts, i);
-            sec.push(_react2.default.createElement(
-              'section',
-              { className: 'section', id: key.id, key: key.id },
-              _react2.default.createElement(
-                'div',
-                { className: 'section-intro' },
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  ' ',
-                  key.title
-                ),
-                _react2.default.createElement('div', { className: 'sec-desc', dangerouslySetInnerHTML: { __html: key.intro } })
-              ),
-              _react2.default.createElement(_card2.default, { apps: key.apps, start: start, totalapps: props.totalapps })
-            ));
-          }
-        }
-      } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-      } finally {
-        try {
-          if (!_iteratorNormalCompletion && _iterator.return) {
-            _iterator.return();
-          }
-        } finally {
-          if (_didIteratorError) {
-            throw _iteratorError;
-          }
-        }
-      }
-
-      return _react2.default.createElement(
-        'div',
-        null,
-        sec
-      );
+      dispatch((0, _actions.fetchAppsIfNeeded)());
     }
   }, {
     key: 'render',
     value: function render() {
-      var counts = counter.counter(this.props.sections);
-      var total = counter.getTotal(counts);
+      var _props = this.props,
+          isFetching = _props.isFetching,
+          apps = _props.apps;
+
+      var totalapps = apps.length;
+
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(this.Sections, { sections: this.props.sections, totalapps: total, counts: counts })
+        isFetching && apps.length === 0 && _react2.default.createElement(
+          'h2',
+          null,
+          'Loading...'
+        ),
+        !isFetching && apps.length === 0 && _react2.default.createElement(
+          'h2',
+          null,
+          'Empty.'
+        ),
+        _react2.default.createElement(_card2.default, { apps: apps, totalapps: totalapps })
       );
     }
   }]);
@@ -105,4 +72,17 @@ var App = function (_Component) {
   return App;
 }(_react.Component);
 
-exports.default = App;
+function mapStateToProps(state) {
+  var isFetching = state.isFetching,
+      apps = state.apps;
+
+
+  return {
+    isFetching: isFetching,
+    apps: apps
+  };
+}
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps)(App);
+
+//export default App;

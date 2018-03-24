@@ -24,21 +24,21 @@ var CardLeft = function (_Component) {
   function CardLeft() {
     _classCallCheck(this, CardLeft);
 
-    return _possibleConstructorReturn(this, (CardLeft.__proto__ || Object.getPrototypeOf(CardLeft)).call(this));
+    return _possibleConstructorReturn(this, (CardLeft.__proto__ || Object.getPrototypeOf(CardLeft)).apply(this, arguments));
   }
 
   _createClass(CardLeft, [{
-    key: 'Appno',
-    value: function Appno(props) {
+    key: 'numbersLeadingZero',
+    value: function numbersLeadingZero(props) {
       var count = 0;
-      if (props.counter < 10) {
-        count = ('0' + props.counter).slice(-2);
+      if (props.appno < 10) {
+        count = ('0' + props.appno).slice(-2);
       } else {
-        count = props.counter;
+        count = props.appno;
       }
       return _react2.default.createElement(
         'span',
-        { className: props.cl },
+        { className: props.withclass },
         count
       );
     }
@@ -51,14 +51,14 @@ var CardLeft = function (_Component) {
         _react2.default.createElement(
           'div',
           { className: 'app-no' },
-          _react2.default.createElement(this.Appno, { counter: this.props.appno, cl: 'current' }),
+          _react2.default.createElement(this.numbersLeadingZero, { appno: this.props.appno, withclass: 'current' }),
           _react2.default.createElement(
             'span',
             { className: 'connector' },
             'of '
           ),
           _react2.default.createElement('br', null),
-          _react2.default.createElement(this.Appno, { counter: this.props.totalapps, cl: 'total' })
+          _react2.default.createElement(this.numbersLeadingZero, { appno: this.props.totalapps, withclass: 'total' })
         ),
         _react2.default.createElement('img', { className: 'app-icon', src: this.props.img.src, alt: this.props.img.alt, height: '120', width: '120' })
       );

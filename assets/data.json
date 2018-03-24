@@ -1,9 +1,4 @@
 [
-{ "id": "ay",
-"title":"Apps of the Year",
-"intro": "<p>These apps have been chosen by our App Store editors as the best on the App Store last year.</p>",
-"apps": [
-
        { "name": "Netflix",
          "publisher": "Netflix, Inc",
          "price": "Free",
@@ -37,18 +32,8 @@
          "desc": "<p>Enjoy all your TV in one place with a new Hulu experience – more personalized and intuitive than ever before.</p><p> The choice is yours - select a plan featuring Hulu’s entire streaming library, or if you’ve subscribed through Hulu to a plan that includes Live TV</p>",
          "link": "https://itunes.apple.com/us/app/hulu-watch-tv-shows-movies/id376510438?mt=8&v0=WWW-NAUS-ITSTOP100-GROSSINGAPPS&l=en&ign-mpt=uo%3D4",
          "tweet":"Enjoy all your TV in one place with a new Hulu experience"
-       }
+       },
 
-   ]
-
-
-},
-
-{
-"id": "gy",
-"title": "Games of the Year",
-"intro": "<p>These games have been chosen by our App Store editors as the best on the App Store last year.</p>",
-"apps": [
   { "name":"Clash of Clans ",
     "publisher": "Supercell",
     "price": "Free",
@@ -82,8 +67,4 @@
     "link": "https://itunes.apple.com/us/app/candy-crush-saga/id553834731?mt=8&v0=WWW-NAUS-ITSTOP100-GROSSINGAPPS&l=en&ign-mpt=uo%3D4",
     "tweet":"Start playing Candy Crush Saga today"
   }
-]
-}
-
-
 ]

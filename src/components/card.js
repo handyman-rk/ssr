@@ -6,23 +6,19 @@ class Card extends Component {
 
   Cardbaker(props){
 
-    let cards = [];
-    let start = props.start;
-    for(let key of props.apps){
-      if (!key.hs || key.hs < 0) {
-        start++;
-         cards.push(
-           <div className="app-card" id={key.name} key={key.name}>
-                <CardLeft img={key.img} appno={start} totalapps={props.totalapps} />
-                <CardRight name={key.name} app={key}/>
+    let cards = [], cardNumber = 1
+
+    for(let app of props.apps){
+      cards.push(
+           <div className="app-card" key={app.name}>
+                <CardLeft img={app.img} appno={cardNumber} totalapps={props.totalapps} />
+                <CardRight name={app.name} app={app}/>
            </div>
-         );
-      }
+         )
+      cardNumber++
     }
 
-    return (
-     <div>{cards}</div>
-    );
+    return ( <div> {cards} </div> )
 
   }
 
@@ -30,7 +26,7 @@ class Card extends Component {
   render() {
 
     return (
-      <this.Cardbaker apps={this.props.apps} start={this.props.start} totalapps={this.props.totalapps}/>
+      <this.Cardbaker apps={this.props.apps} totalapps={this.props.totalapps}/>
     );
   }
 

@@ -1,9 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import {render} from 'react-dom'
+import {Provider} from 'react-redux'
+import configureStore from './redux/configureStore'
+import App from './components/pure-client-app'
 
-import App from './components/pure-client-app';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('app')
-);
+const store = configureStore()
+
+
+render(
+  <Provider store={store} >
+     <App />
+  </Provider>,
+  document.querySelector('#app')
+)
