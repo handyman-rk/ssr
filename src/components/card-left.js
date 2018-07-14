@@ -4,11 +4,9 @@ class CardLeft extends Component {
 
   numbersLeadingZero(props) {
     let count = 0;
-    if(props.appno <10){
-      count = ('0' + props.appno).slice(-2);
-    }else{
-      count = props.appno;
-    }
+
+    // Append the leading zero (0) before the app number 
+    count = ('0' + props.appno).slice(-2);
     return(
       <span className={props.withclass}>{count}</span>
     );

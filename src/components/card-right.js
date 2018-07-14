@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Title from './title';
-const tws = require('./tweet');
+const tweet = require('./tweet');
 
 class CardRight extends Component {
 
@@ -16,7 +16,7 @@ class CardRight extends Component {
         <div className="app-link">
           <a className="btn" href={this.props.app.link} target="_blank">Get App</a>
           <a href="#/" className="btn btn-twitter" title="Share on Twitter" rel="nofollow"
-             onClick={((e) =>{tws(this.props.app.tweet); e.preventDefault();})}>
+             onClick={((e) =>{tweet(this.props.app.tweet); e.preventDefault();})}>
             <i className="icon icon-inline icon-twitter-light "></i>
             Tweet
           </a>

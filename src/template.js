@@ -1,9 +1,9 @@
 // html skeleton provider
-function template(title, state = {}, content = ""){
-  let scripts = '';
+function template(title, initialState = {}, content = ""){
+  let scripts = ''; // Dynamically ship scripts based on render type
   if(content){
     scripts = ` <script>
-                   window.__STATE__ = ${JSON.stringify(state)}
+                   window.__STATE__ = ${JSON.stringify(initialState)}
                 </script>
                 <script src="assets/client.js"></script>
                 `
@@ -16,7 +16,6 @@ function template(title, state = {}, content = ""){
                 <meta charset="utf-8">
                 <title> ${title} </title>
                 <link href="assets/style.css" rel="stylesheet">
-                <meta name="google-site-verification" content="qE1qNLn82RtfjKrtO-y8kh1G-mn2uqB65eGCY-EMSbM" />
               </head>
               <body>
                 <div class="content">
