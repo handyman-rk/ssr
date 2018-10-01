@@ -1,6 +1,6 @@
 {
   "name": "app-cards",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Server-side Rendering React from Scratch!",
   "main": "index.js",
   "engines": {
@@ -17,19 +17,19 @@
   "license": "CC BY 4.0",
   "dependencies": {
     "express": "^4.16.3",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "webpack": "^4.16.0",
-    "webpack-cli": "^2.1.5"
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
