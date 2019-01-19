@@ -8,6 +8,13 @@ Here’s what we will build in this tutorial:
 ![Clash of Clans app card](https://cdn-images-1.medium.com/max/1000/1*wk04sWGQkw36_XLFvPACrA.png)
 
 
+## Setup
+```
+$ npm run install
+$ npm run build
+$ npm run start
+```
+
 ## Ready to become a React Pro?
 Subscribe to get your React skills blazing, immediately. 
 
