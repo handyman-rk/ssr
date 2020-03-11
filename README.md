@@ -1,7 +1,7 @@
 # React Server-Side Rendering Example
 
 Above is an example playground for you to play with React & Redux on Client and Server sides.
-Before jumping into it, make sure to [read SSR tutorial on Medium](http://bit.ly/2IQ51Xq).
+Before jumping into it, make sure to [read SSR tutorial on Freecodecamp](https://www.freecodecamp.org/news/server-side-rendering-your-react-app-in-three-simple-steps-7a82b95db82e/).
 
 Here’s what we will build in this tutorial:
 
@@ -14,8 +14,3 @@ $ npm run install
 $ npm run build
 $ npm run start
 ```
-
-## Ready to become a React Pro?
-Subscribe to get your React skills blazing, immediately. 
-
-[Join the mailing list](http://eepurl.com/dpfhGn).  I won’t spam. 👍
