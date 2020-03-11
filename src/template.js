@@ -1,7 +1,7 @@
 // html skeleton provider
-function template(title, initialState = {}, content = ""){
+export default function template(title, initialState = {}, content = "") {
   let scripts = ''; // Dynamically ship scripts based on render type
-  if(content){
+  if (content) {
     scripts = ` <script>
                    window.__STATE__ = ${JSON.stringify(initialState)}
                 </script>
@@ -20,7 +20,7 @@ function template(title, initialState = {}, content = ""){
               <body>
                 <div class="content">
                    <div id="app" class="wrap-inner">
-                      <!--- magic happens here -->  ${content}
+                      ${content}
                    </div>
                 </div>
 
@@ -30,5 +30,3 @@ function template(title, initialState = {}, content = ""){
 
   return page;
 }
-
-module.exports = template;

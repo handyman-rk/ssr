@@ -1,17 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-class Title extends Component {
-  render(){
-    if(this.props.publisher){
-       return (
-         <h3>{this.props.name}<span className="connector">by </span><span className="publisher">{this.props.publisher}</span> </h3>
-       );
-    } else{
-      return (
-        <h3>{this.props.name}</h3>
-      );
-    }
+const Title = ({ name, publisher }) => {
+  if (publisher) {
+    return (
+      <h3>{name}<span className="connector">by </span><span className="publisher">{publisher}</span></h3>
+    )
   }
+
+  return (<h3>{name}</h3>)
 }
 
 export default Title;

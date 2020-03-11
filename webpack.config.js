@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: {
     client: './src/client.js',
     bundle: './src/bundle.js'
@@ -14,5 +15,4 @@ module.exports = {
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
     ]
  }
-
 }

@@ -7,7 +7,6 @@ import App from './components/app'
 // Create a fresh store 
 const store = configureStore()
 
-
 render(
   <Provider store={store} >
      <App />

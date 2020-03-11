@@ -1,10 +1,8 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { fetchAppsIfNeeded } from '../redux/actions'
 
 import Card from './card'
-
-
 class App extends Component {
 
   componentDidMount() {
@@ -15,21 +13,19 @@ class App extends Component {
 
   render() {
     const { isFetching, apps } = this.props
-    let totalapps = apps.length;
+    const totalapps = apps.length;
 
     return (
-       <div>
-         {isFetching && apps.length === 0 && <h2>Loading...</h2>}
-         {!isFetching && apps.length === 0 && <h2>Empty.</h2>}
+       <>
+         {isFetching && totalapps === 0 && <h2>Loading...</h2>}
+         {!isFetching && totalapps === 0 && <h2>Empty.</h2>}
          <Card apps={apps} totalapps={totalapps} />
-       </div>
+       </>
     );
   }
 }
  
-function mapStateToProps(state) {
-  const { isFetching, apps } = state
- 
+function mapStateToProps({ isFetching, apps }) {
   return {
     isFetching,
     apps

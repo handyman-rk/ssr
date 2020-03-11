@@ -3,33 +3,28 @@
   "version": "1.1.0",
   "description": "Server-side Rendering React from Scratch!",
   "main": "index.js",
-  "engines": {
-    "node": "8.10.0",
-    "npm": "5.7.1"
-  },
   "scripts": {
-    "start": "node index.js",
-    "pack": "webpack --config webpack.config.js",
-    "babel": "babel src -d views",
-    "build": "npm run pack && npm run babel"
+    "start": "yarn build && node index.js",
+    "build": "webpack --config webpack.config.js"
   },
   "author": "Rohit kumar",
-  "license": "CC BY 4.0",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
-    "react-redux": "^5.0.7",
-    "redux": "^3.7.2",
+    "@babel/register": "^7.8.6",
+    "express": "^4.17.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.1.2",
-    "@babel/core": "^7.1.2",
-    "@babel/preset-env": "^7.1.0",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.4",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
   }
 }
